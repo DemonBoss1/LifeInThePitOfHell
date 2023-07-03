@@ -28,6 +28,7 @@
         <e p="Script" t="Include">
           <e p="Damager.cs" t="Include" />
           <e p="Dead.cs" t="Include" />
+          <e p="EnemyController.cs" t="Include" />
           <e p="HitPoints.cs" t="Include" />
           <e p="Meal.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />
