@@ -1,26 +1,30 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Meal : MonoBehaviour
 {
     [SerializeField]int value;
-    void Start()
+    private bool _triggered;
+    private HitPoints _character;
+    void OnTriggerEnter2D(Collider2D other)
     {
-        
+        _character = other.GetComponent<HitPoints>();
+        if(_character != null)
+        {
+            _triggered = true;
+        }
+    }
+    void OnTriggerExit2D(Collider2D other)
+    {
+        _character = null;
+        _triggered = false;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
-    }
-    void OnTriggerStay2D(Collider2D other)
-    {
-        HitPoints character = other.GetComponent<HitPoints>();
-        if(character != null){
+        if (_triggered && _character != null)
+        {
             if(Input.GetKeyDown(KeyCode.E)){
-                character.changeHP(value);
+                _character.changeHP(value);
                 Destroy(gameObject);
             }
         }
