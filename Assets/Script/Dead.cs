@@ -8,6 +8,9 @@ public class Dead : MonoBehaviour
     [SerializeField] GameObject projectilePrefab;
     void Update()
     {
-        if(HP.HP <= 0)Destroy(gameObject);
+        if(HP.HP <= 0){
+            Instantiate(projectilePrefab, transform.position, Quaternion.identity);
+            Destroy(gameObject);
+        }
     }
 }
