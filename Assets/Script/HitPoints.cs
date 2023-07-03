@@ -5,10 +5,12 @@ using UnityEngine;
 public class HitPoints : MonoBehaviour
 {
     [SerializeField]int maxHitPoints;
-    int currentHitPoints;
+    public int HP{get{return currentHitPoints;} set{}}
+    [SerializeField]int currentHitPoints;
     [SerializeField] float timeInvincible = 2.0f;
     bool isInvincible;
     float invincibleTimer;
+    [SerializeField]bool isPlayer;
     void Start()
     {
         currentHitPoints = maxHitPoints;
@@ -30,7 +32,7 @@ public class HitPoints : MonoBehaviour
             invincibleTimer = timeInvincible;
         }
         currentHitPoints = Mathf.Clamp(currentHitPoints + value, 0, maxHitPoints);
-        UIHealthBar.instance.SetValue(currentHitPoints/(float)maxHitPoints);
+        if(isPlayer) UIHealthBar.instance.SetValue(currentHitPoints/(float)maxHitPoints);
 
         Debug.Log(currentHitPoints + "/" + maxHitPoints);
     }
