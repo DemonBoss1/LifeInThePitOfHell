@@ -14,7 +14,7 @@ public class EnemyController : MonoBehaviour
 
     private void Update()
     {
-        Vector3 direction = (_player.position - transform.position).normalized;
-        rb.velocity = new Vector2(direction.x * speed, direction.y * speed);
+        Vector2 direction = (_player.position - transform.position).normalized;
+        rb.velocity = direction * speed;
     }
 }
