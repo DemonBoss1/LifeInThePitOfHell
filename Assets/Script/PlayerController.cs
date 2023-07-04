@@ -13,7 +13,13 @@ namespace Script
         [SerializeField] private Rigidbody2D rigidbody2d;
         [SerializeField] private Animator animator;
 
-        [SerializeField] private int damage; 
+        [SerializeField] private int damage;
+        [SerializeField] private AudioSource audioSource;
+        [SerializeField] private AudioClip swingSword;
+        
+        private bool _isHit;
+        private float timeHit = 0.5f;
+        private float _hitTimer;
 
         void Start()
         {
@@ -30,8 +36,18 @@ namespace Script
 
             if (Input.GetAxis("Fire1") != 0)
             {
+                if(_isHit) 
+                    return;
+                _isHit = true;
+                _hitTimer = timeHit;
+                audioSource.PlayOneShot(swingSword);
                 Compat.Attack(this, new Vector2(horizontal, vertical), 0.5f, damage);
                 Debug.Log("Attack");
+            }
+            if(_isHit){
+                _hitTimer -= Time.deltaTime;
+                if(_hitTimer < 0)
+                    _isHit = false;
             }
         }
         private void FixedUpdate() {

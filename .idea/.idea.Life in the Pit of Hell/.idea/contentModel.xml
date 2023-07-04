@@ -15,6 +15,7 @@
           </e>
           <e p="Tiles" t="Include" />
         </e>
+        <e p="Audio" t="Include" />
         <e p="Free Meat and Skin Icons" t="Include">
           <e p="PNG" t="Include">
             <e p="shadow" t="Include" />

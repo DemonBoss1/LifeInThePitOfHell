@@ -11,6 +11,8 @@ namespace Script
         bool isInvincible;
         float invincibleTimer;
         [SerializeField]bool isPlayer;
+
+        public AudioClip blowBody;
         void Start()
         {
             currentHitPoints = maxHitPoints;
@@ -30,11 +32,21 @@ namespace Script
                     return;
                 isInvincible = true;
                 invincibleTimer = timeInvincible;
+                if (currentHitPoints + value > 0) playAudio();
             }
             currentHitPoints = Mathf.Clamp(currentHitPoints + value, 0, maxHitPoints);
             if(isPlayer) UIHealthBar.instance.SetValue(currentHitPoints/(float)maxHitPoints);
 
             Debug.Log(currentHitPoints + "/" + maxHitPoints);
+        }
+
+        void playAudio()
+        {
+            AudioSource audioPlayer = GetComponent<AudioSource>();
+            if (audioPlayer != null)
+            {
+                audioPlayer.PlayOneShot(blowBody);
+            }
         }
         void heal(int value){
         
