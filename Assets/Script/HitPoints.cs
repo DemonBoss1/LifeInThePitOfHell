@@ -12,6 +12,8 @@ namespace Script
         float invincibleTimer;
         [SerializeField]bool isPlayer;
 
+        public bool IsPlayer => isPlayer;
+
         public AudioClip blowBody;
         void Start()
         {

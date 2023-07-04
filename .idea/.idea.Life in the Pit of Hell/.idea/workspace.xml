@@ -24,7 +24,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Life in the Pit of Hell/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Life in the Pit of Hell/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/Dead.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Dead.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/HitPoints.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/HitPoints.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/UIHealthBar.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/UIHealthBar.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +37,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Script/Compat.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/UI/UIMainMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/PlayerCombat.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -47,6 +49,7 @@
         <option value="$PROJECT_DIR$/Assets/Script/Compat.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/PlayerCombat.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/UI/UIMainMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/HitPoints.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Dead.cs" />
       </list>
@@ -99,7 +102,7 @@
       <option name="presentableId" value="Default" />
       <updated>1688410680459</updated>
       <workItem from="1688410688451" duration="878000" />
-      <workItem from="1688458652689" duration="8444000" />
+      <workItem from="1688458652689" duration="10425000" />
     </task>
     <servers />
   </component>
@@ -121,5 +124,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="377" y="209" key="run.anything.popup" timestamp="1688474150392">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="377" y="209" key="run.anything.popup/0.0.1440.912@0.0.1440.912" timestamp="1688474150392" />
   </component>
 </project>

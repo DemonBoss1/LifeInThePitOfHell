@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Script
 {
@@ -24,8 +25,12 @@ namespace Script
                 _playAudioTimer -= Time.deltaTime;
                 if (_playAudioTimer < 0)
                 {
-                    Instantiate(projectilePrefab, transform.position, Quaternion.identity);
-                    Destroy(gameObject);
+                    if (!HP.IsPlayer)
+                    {
+                        Instantiate(projectilePrefab, transform.position, Quaternion.identity);
+                        Destroy(gameObject);
+                    }
+                    else SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
                 }
             }
         }
