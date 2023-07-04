@@ -1,9 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="4c27d656-66fa-4961-aa8d-8b2259de6089" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Life in the Pit of Hell/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Life in the Pit of Hell/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Life in the Pit of Hell/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Life in the Pit of Hell/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CameraController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Damager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Damager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Dead.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Dead.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/EnemyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/EnemyController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/GameController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/HitPoints.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/HitPoints.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Meal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Meal.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/PlayerController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/Teleport.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Teleport.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/UIHealthBar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/UIHealthBar.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,12 +41,19 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Compat.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/PlayerCombat.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Script/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Teleport.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/CameraController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Compat.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/PlayerCombat.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/PlayerController.cs" />
       </list>
     </option>
   </component>
@@ -69,6 +104,7 @@
       <option name="presentableId" value="Default" />
       <updated>1688410680459</updated>
       <workItem from="1688410688451" duration="878000" />
+      <workItem from="1688458652689" duration="5256000" />
     </task>
     <servers />
   </component>
@@ -77,6 +113,17 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>

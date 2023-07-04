@@ -1,20 +1,23 @@
 using UnityEngine;
 
-public class EnemyController : MonoBehaviour
+namespace Script
 {
-    private Transform _player;
-    [SerializeField] private float speed;
-    private Rigidbody2D rb;
-
-    private void Start()
+    public class EnemyController : MonoBehaviour
     {
-        _player = GameObject.FindGameObjectWithTag("Player").transform;
-        rb = GetComponent<Rigidbody2D>();
-    }
+        private Transform _player;
+        [SerializeField] private float speed;
+        private Rigidbody2D rb;
 
-    private void Update()
-    {
-        Vector2 direction = (_player.position - transform.position).normalized;
-        rb.velocity = direction * speed;
+        private void Start()
+        {
+            _player = GameObject.FindGameObjectWithTag("Player").transform;
+            rb = GetComponent<Rigidbody2D>();
+        }
+
+        private void Update()
+        {
+            Vector2 direction = (_player.position - transform.position).normalized;
+            rb.velocity = direction * speed;
+        }
     }
 }

@@ -26,12 +26,14 @@
         <e p="Scenes" t="Include" />
         <e p="Script" t="Include">
           <e p="CameraController.cs" t="Include" />
+          <e p="Compat.cs" t="Include" />
           <e p="Damager.cs" t="Include" />
           <e p="Dead.cs" t="Include" />
           <e p="EnemyController.cs" t="Include" />
           <e p="GameController.cs" t="Include" />
           <e p="HitPoints.cs" t="Include" />
           <e p="Meal.cs" t="Include" />
+          <e p="PlayerCombat.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />
           <e p="Teleport.cs" t="Include" />
           <e p="UIHealthBar.cs" t="Include" />

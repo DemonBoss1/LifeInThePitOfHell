@@ -1,16 +1,17 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Dead : MonoBehaviour
+namespace Script
 {
-    [SerializeField] HitPoints HP;
-    [SerializeField] GameObject projectilePrefab;
-    void Update()
+    public class Dead : MonoBehaviour
     {
-        if(HP.HP <= 0){
-            Instantiate(projectilePrefab, transform.position, Quaternion.identity);
-            Destroy(gameObject);
+        [SerializeField] HitPoints HP;
+        [SerializeField] GameObject projectilePrefab;
+        void Update()
+        {
+            if(HP.HP <= 0){
+                Instantiate(projectilePrefab, transform.position, Quaternion.identity);
+                Destroy(gameObject);
+            }
         }
     }
 }

@@ -1,31 +1,34 @@
 using UnityEngine;
 
-public class Meal : MonoBehaviour
+namespace Script
 {
-    [SerializeField]int value;
-    private bool _triggered;
-    private HitPoints _character;
-    void OnTriggerEnter2D(Collider2D other)
+    public class Meal : MonoBehaviour
     {
-        _character = other.GetComponent<HitPoints>();
-        if(_character != null)
+        [SerializeField]int value;
+        private bool _triggered;
+        private HitPoints _character;
+        void OnTriggerEnter2D(Collider2D other)
         {
-            _triggered = true;
+            _character = other.GetComponent<HitPoints>();
+            if(_character != null)
+            {
+                _triggered = true;
+            }
         }
-    }
-    void OnTriggerExit2D(Collider2D other)
-    {
-        _character = null;
-        _triggered = false;
-    }
-
-    private void Update()
-    {
-        if (_triggered && _character != null)
+        void OnTriggerExit2D(Collider2D other)
         {
-            if(Input.GetKeyDown(KeyCode.E)){
-                _character.changeHP(value);
-                Destroy(gameObject);
+            _character = null;
+            _triggered = false;
+        }
+
+        private void Update()
+        {
+            if (_triggered && _character != null)
+            {
+                if(Input.GetKeyDown(KeyCode.E)){
+                    _character.changeHP(value);
+                    Destroy(gameObject);
+                }
             }
         }
     }

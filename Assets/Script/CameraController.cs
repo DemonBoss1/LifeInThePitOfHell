@@ -1,23 +1,23 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraController : MonoBehaviour
+namespace Script
 {
-    private Transform _player;
-    [SerializeField] private float speed;
-
-    private void Start()
+    public class CameraController : MonoBehaviour
     {
-        _player = GameObject.FindGameObjectWithTag("Player").transform;
-    }
+        private Transform _player;
+        [SerializeField] private float speed;
 
-    private void FixedUpdate()
-    {
-        Vector3 targetPos = _player.position;
-        targetPos.z = -10;
-        targetPos.y += 2;
-        transform.position = Vector3.Lerp(transform.position, targetPos, Time.deltaTime * speed);
+        private void Start()
+        {
+            _player = GameObject.FindGameObjectWithTag("Player").transform;
+        }
+
+        private void FixedUpdate()
+        {
+            Vector3 targetPos = _player.position;
+            targetPos.z = -10;
+            targetPos.y += 2;
+            transform.position = Vector3.Lerp(transform.position, targetPos, Time.deltaTime * speed);
+        }
     }
 }
