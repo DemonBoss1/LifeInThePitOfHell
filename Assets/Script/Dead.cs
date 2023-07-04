@@ -12,12 +12,16 @@ namespace Script
 
         private bool _isPlayAudio;
         private float _playAudioTimer;
+        
+        [SerializeField] private GameObject DeadUI;
+
         void Update()
         {
             if((HP.HP <= 0)&&(!_isPlayAudio)){
                 playAudio();
                 _isPlayAudio = true;
                 _playAudioTimer = 1.0f;
+                if(HP.IsPlayer) DeadUI.SetActive(true);
             }
 
             if (_isPlayAudio)
@@ -30,7 +34,11 @@ namespace Script
                         Instantiate(projectilePrefab, transform.position, Quaternion.identity);
                         Destroy(gameObject);
                     }
-                    else SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+                    else
+                    {
+                        SceneManager.LoadScene(0);
+                    }
+                    
                 }
             }
         }
