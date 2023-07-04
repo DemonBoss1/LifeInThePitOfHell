@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Unity\Life in the Pit of Hell" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Art" t="Include">
+          <e p="Animations" t="Include">
+            <e p="Rat" t="Include" />
+          </e>
+          <e p="Sprites" t="Include">
+            <e p="Materials" t="Include" />
+            <e p="Tile" t="Include" />
+            <e p="UI" t="Include" />
+          </e>
+          <e p="Tiles" t="Include" />
+        </e>
+        <e p="Free Meat and Skin Icons" t="Include">
+          <e p="PNG" t="Include">
+            <e p="shadow" t="Include" />
+            <e p="without_shadow" t="Include" />
+          </e>
+          <e p="readme.txt" t="Include" />
+        </e>
+        <e p="Prefabs" t="Include" />
+        <e p="Scenes" t="Include" />
+        <e p="Script" t="Include">
+          <e p="CameraController.cs" t="Include" />
+          <e p="Damager.cs" t="Include" />
+          <e p="Dead.cs" t="Include" />
+          <e p="EnemyController.cs" t="Include" />
+          <e p="GameController.cs" t="Include" />
+          <e p="HitPoints.cs" t="Include" />
+          <e p="Meal.cs" t="Include" />
+          <e p="PlayerController.cs" t="Include" />
+          <e p="Teleport.cs" t="Include" />
+          <e p="UIHealthBar.cs" t="Include" />
+        </e>
+      </e>
+      <e p="Life in the Pit of Hell.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\Bin" t="ExcludeRecursive" />
+    </e>
+    <e p="C:\Users\Дмитрий\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Дмитрий\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_Life in the Pit of Hell.1307642728.00" t="ExcludeRecursive" />
+  </component>
+</project>

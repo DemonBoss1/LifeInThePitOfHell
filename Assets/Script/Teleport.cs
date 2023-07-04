@@ -14,7 +14,7 @@ public class Teleport : MonoBehaviour
     {
         if(other.CompareTag("Player")){
             player.transform.position = destination.transform.position;
-            GameController.gameController.spawnEmpty();
+            GameController.gameController.SpawnEmpty();
         }
     }
 }
