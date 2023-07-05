@@ -8,7 +8,8 @@ using UnityEngine.UI;
 
 public class UIDayControl : MonoBehaviour
 {
-    private int day = 1;
+    private int _day = 1;
+    public int Day => _day;
     [SerializeField] private TextMeshProUGUI textUp;
     [SerializeField] private TextMeshProUGUI textPanel;
     public static UIDayControl DayControl;
@@ -16,14 +17,14 @@ public class UIDayControl : MonoBehaviour
     private void Awake()
     {
         DayControl = this;
-        textUp.text = "Day " + day;
-        textPanel.text = "Day " + day;
+        textUp.text = "Day " + _day;
+        textPanel.text = "Day " + _day;
     }
 
     public void NextDay()
     {
-        day++;
-        textUp.text = "Day " + day;
-        textPanel.text = "Day " + day;
+        _day++;
+        textUp.text = "Day " + _day;
+        textPanel.text = "Day " + _day;
     }
 }

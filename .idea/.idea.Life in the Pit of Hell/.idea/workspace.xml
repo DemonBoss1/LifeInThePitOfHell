@@ -20,16 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c27d656-66fa-4961-aa8d-8b2259de6089" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Life in the Pit of Hell/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Life in the Pit of Hell/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Life in the Pit of Hell/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Life in the Pit of Hell/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Life in the Pit of Hell/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Life in the Pit of Hell/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/CharacterCharacteristics.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CharacterCharacteristics.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/System/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/System/CameraController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/System/FrameRate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/System/FrameRate.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/System/EnemyFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/System/EnemyFactory.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/System/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/System/GameController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/System/Serialization.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/System/Serialization.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/System/SerializationBinaryFormatter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/System/SerializationBinaryFormatter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/System/Teleport.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/System/Teleport.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,9 +55,9 @@
         <option value="$PROJECT_DIR$/Assets/Script/Teleport.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/UI/UIDayControl.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/UI/UIDayEvent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/System/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/CharacterCharacteristics.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/System/EnemyFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/System/GameController.cs" />
       </list>
     </option>
   </component>
@@ -118,7 +110,7 @@
       <workItem from="1688410688451" duration="878000" />
       <workItem from="1688458652689" duration="10425000" />
       <workItem from="1688490871397" duration="13132000" />
-      <workItem from="1688560828514" duration="2061000" />
+      <workItem from="1688560828514" duration="2409000" />
     </task>
     <servers />
   </component>

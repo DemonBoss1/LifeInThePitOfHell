@@ -12,7 +12,7 @@ namespace Script.System
         public void SpawnEmpty()
         {
             Vector2 pos = new Vector2(-4, 2);
-            EnemyFactory.CreateEnemy(projectilePrefab, pos);
+            EnemyFactory.CreateEnemy(projectilePrefab, pos, UIDayControl.DayControl.Day);
         }
     }
 }
