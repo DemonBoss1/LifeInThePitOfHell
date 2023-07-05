@@ -74,6 +74,7 @@
           <e p="Teleport.cs" t="Include" />
           <e p="UI" t="Include">
             <e p="PauseMenu.cs" t="Include" />
+            <e p="UIDayControl.cs" t="Include" />
             <e p="UIHealthBar.cs" t="Include" />
             <e p="UIMainMenu.cs" t="Include" />
           </e>

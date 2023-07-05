@@ -13,6 +13,7 @@ namespace Script
         void OnTriggerEnter2D(Collider2D other)
         {
             if(other.CompareTag("Player")){
+                UIDayControl.DayControl.NextDay();
                 player.transform.position = destination.transform.position;
                 GameController.gameController.SpawnEmpty();
             }
