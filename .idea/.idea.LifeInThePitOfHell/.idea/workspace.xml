@@ -20,9 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="33e504e7-a532-41a3-8707-5aefeeecd5bc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.LifeInThePitOfHell/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LifeInThePitOfHell/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.LifeInThePitOfHell/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LifeInThePitOfHell/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/CharacterCharacteristics.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CharacterCharacteristics.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +105,7 @@
       <updated>1688381742628</updated>
       <workItem from="1688381759104" duration="4948000" />
       <workItem from="1688531147946" duration="6113000" />
-      <workItem from="1688558147751" duration="3166000" />
+      <workItem from="1688558147751" duration="3837000" />
     </task>
     <servers />
   </component>
