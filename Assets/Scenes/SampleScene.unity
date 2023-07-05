@@ -23911,6 +23911,10 @@ PrefabInstance:
       propertyPath: DeadUI
       value: 
       objectReference: {fileID: 1201668005}
+    - target: {fileID: 1769281294584050399, guid: 1b0c68f238a4a754f8481ad81374ad2f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1811730968294191798, guid: 1b0c68f238a4a754f8481ad81374ad2f, type: 3}
       propertyPath: timeInvincible
       value: 1
