@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 887211417868732712}
   - component: {fileID: 6529677968353653014}
   - component: {fileID: 1690440955761903599}
+  - component: {fileID: 8882070202323459731}
   m_Layer: 13
   m_Name: Enemy
   m_TagString: Untagged
@@ -38,7 +39,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3275462822121487040
 SpriteRenderer:
@@ -149,7 +150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d21cad0bbb271542a8928eb5d6ee5a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 2
 --- !u!114 &3577276062743783567
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,12 +163,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0e45a65c64a85d4aa7e6be0eb2bd8a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHitPoints: 5
   currentHitPoints: 0
   timeInvincible: 0.5
   isPlayer: 0
   triggered: 0
   eat: 0
+  characteristics: {fileID: 8882070202323459731}
   blowBody: {fileID: 8300000, guid: f4eb4c84c9906514cb73117f4bc302a2, type: 3}
 --- !u!114 &1834922989178564528
 MonoBehaviour:
@@ -338,3 +339,15 @@ MonoBehaviour:
   down: {fileID: 21300000, guid: 86de2c551cc647f40bbec20ae3f33147, type: 3}
   up: {fileID: 21300000, guid: bbee0073db0ebde4ea9bdc963ea8cec4, type: 3}
   playerSprite: {fileID: 3275462822121487040}
+--- !u!114 &8882070202323459731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3567187387134627923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e35b34ee77c1ca4084d8085650dc8e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -4,7 +4,7 @@ namespace Script
 {
     public class CharacterCharacteristics : MonoBehaviour
     {
-        private float _attack = 1;
+        private float _attack = 2;
 
         public float Attack => _attack;
 
@@ -25,16 +25,16 @@ namespace Script
 
         void LevelUp()
         {
-            _attack *= 1.1f;
-            _protection *= 1.1f;
+            _attack *= 1.5f;
+            _protection *= 1.5f;
             _dexterity *= 1.1f;
-            _dexterity *= 1.1f;
+            _maxHitPoint *= 1.5f;
         }
 
         public void getXP(int value)
         {
             _currentXp += value;
-            if (_currentXp > _requiredXp)
+            while (_currentXp > _requiredXp)
             {
                 _currentXp -= _requiredXp;
                 _requiredXp *= 2;

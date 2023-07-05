@@ -1,13 +1,13 @@
 using Script.UI;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Script
 {
     public class HitPoints : MonoBehaviour
     {
-        [SerializeField]int maxHitPoints;
-        public int HP{get{return currentHitPoints;} set{}}
-        [SerializeField]int currentHitPoints;
+        public float HP => currentHitPoints;
+        [SerializeField]float currentHitPoints;
         [SerializeField] float timeInvincible = 2.0f;
         bool isInvincible;
         float invincibleTimer;
@@ -15,12 +15,14 @@ namespace Script
         [HideInInspector] public bool triggered;
         [HideInInspector] public bool eat;
 
+        [SerializeField] private CharacterCharacteristics characteristics;
+
         public bool IsPlayer => isPlayer;
 
         public AudioClip blowBody;
         void Start()
         {
-            currentHitPoints = maxHitPoints;
+            currentHitPoints = characteristics.MAXHitPoint;
         }
 
         void Update()
@@ -31,18 +33,19 @@ namespace Script
                     isInvincible = false;
             }
         }
-        public void changeHP(int value){
+        public void changeHP(float value){
             if(value < 0){
                 if(isInvincible) 
                     return;
                 isInvincible = true;
-                invincibleTimer = timeInvincible;
+                invincibleTimer = timeInvincible * characteristics.Dexterity;
                 if (currentHitPoints + value > 0) playAudio();
+                value = Mathf.Min(0, value + characteristics.Protection);
             }
-            currentHitPoints = Mathf.Clamp(currentHitPoints + value, 0, maxHitPoints);
-            if(isPlayer) UIHealthBar.instance.SetValue(currentHitPoints/(float)maxHitPoints);
+            currentHitPoints = Mathf.Clamp(currentHitPoints + value, 0, characteristics.MAXHitPoint);
+            if(isPlayer) UIHealthBar.instance.SetValue(currentHitPoints/characteristics.MAXHitPoint);
 
-            Debug.Log(currentHitPoints + "/" + maxHitPoints);
+            Debug.Log(currentHitPoints + "/" + characteristics.MAXHitPoint);
         }
 
         void playAudio()

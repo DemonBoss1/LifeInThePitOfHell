@@ -26,6 +26,8 @@ namespace Script
         private float _hitTimer;
         private Vector2 _direction;
 
+        [SerializeField] private CharacterCharacteristics characteristics;
+
         void Start()
         {
             ControllerCanvas = controllerCanvas;
@@ -81,7 +83,7 @@ namespace Script
             _isHit = true;
             _hitTimer = timeHit;
             audioSource.PlayOneShot(swingSword);
-            Compat.Attack(this, _direction, 0.5f, damage);
+            Compat.Attack(this, _direction, 0.5f, characteristics.Attack);
             Debug.Log("Attack");
         }
 

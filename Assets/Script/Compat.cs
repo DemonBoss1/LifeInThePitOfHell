@@ -4,7 +4,7 @@ namespace Script
 {
     public class Compat : MonoBehaviour
     {
-        public static void Attack(PlayerController attacker, Vector2 directionMovement, float radius, int damage)
+        public static void Attack(PlayerController attacker, Vector2 directionMovement, float radius, float damage)
         {
             Vector2 attackPos = attacker.Position;
             attackPos.y += 1f;
