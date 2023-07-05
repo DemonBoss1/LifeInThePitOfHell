@@ -14,6 +14,7 @@ namespace Script
         {
             if(other.CompareTag("Player")){
                 UIDayControl.DayControl.NextDay();
+                UIDayEvent.DayEvent.PlayEvent();
                 player.transform.position = destination.transform.position;
                 GameController.gameController.SpawnEmpty();
             }

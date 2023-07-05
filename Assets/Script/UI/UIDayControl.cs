@@ -10,17 +10,20 @@ public class UIDayControl : MonoBehaviour
 {
     private int day = 1;
     [SerializeField] private TextMeshProUGUI textUp;
+    [SerializeField] private TextMeshProUGUI textPanel;
     public static UIDayControl DayControl;
 
     private void Awake()
     {
         DayControl = this;
         textUp.text = "Day " + day;
+        textPanel.text = "Day " + day;
     }
 
     public void NextDay()
     {
         day++;
         textUp.text = "Day " + day;
+        textPanel.text = "Day " + day;
     }
 }
