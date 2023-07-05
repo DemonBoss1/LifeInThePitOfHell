@@ -49,13 +49,11 @@ namespace Script
                 horizontal = joystick.Horizontal;
                 vertical = joystick.Vertical;
             }
-
-
-            _rotation.Rotate(horizontal, vertical);
             if (horizontal != 0 || vertical != 0)
             {
                 _direction = new Vector2(horizontal, vertical).normalized;
             }
+            _rotation.Rotate(_direction.x, _direction.y);
 
             if (Input.GetAxis("Fire1") != 0 && _platform == 0)
             {

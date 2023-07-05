@@ -12,8 +12,8 @@ namespace Script
         bool isInvincible;
         float invincibleTimer;
         [SerializeField]bool isPlayer;
-        public bool triggered;
-        public bool eat;
+        [HideInInspector] public bool triggered;
+        [HideInInspector] public bool eat;
 
         public bool IsPlayer => isPlayer;
 
