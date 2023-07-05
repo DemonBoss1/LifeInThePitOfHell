@@ -4,19 +4,19 @@ namespace Script
 {
     public class CharacterCharacteristics : MonoBehaviour
     {
-        private float _attack = 2;
+        [SerializeField]private float _attack = 2;
 
         public float Attack => _attack;
 
-        private float _protection = 1;
+        [SerializeField]private float _protection = 1;
 
         public float Protection => _protection;
 
-        private float _dexterity = 1;
+        [SerializeField]private float _dexterity = 1;
 
         public float Dexterity => _dexterity;
 
-        private float _maxHitPoint = 5;
+        [SerializeField]private float _maxHitPoint = 5;
 
         public float MAXHitPoint => _maxHitPoint;
 

@@ -16,6 +16,8 @@ namespace Script
                 if (hp != null)
                 {
                     hp.changeHP(-damage);
+                    CharacterCharacteristics characteristics = attacker.GetComponent<CharacterCharacteristics>();
+                    characteristics.getXP(5);
                 }
             }
         }
