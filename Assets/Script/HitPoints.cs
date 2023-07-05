@@ -1,3 +1,4 @@
+using Script.UI;
 using UnityEngine;
 
 namespace Script
@@ -11,6 +12,8 @@ namespace Script
         bool isInvincible;
         float invincibleTimer;
         [SerializeField]bool isPlayer;
+        public bool triggered;
+        public bool eat;
 
         public bool IsPlayer => isPlayer;
 
@@ -49,6 +52,11 @@ namespace Script
             {
                 audioPlayer.PlayOneShot(blowBody);
             }
+        }
+
+        public void Eat()
+        {
+            eat = true;
         }
         void heal(int value){
         

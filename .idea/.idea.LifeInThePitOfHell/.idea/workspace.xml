@@ -20,7 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="33e504e7-a532-41a3-8707-5aefeeecd5bc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.LifeInThePitOfHell/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LifeInThePitOfHell/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LifeInThePitOfHell/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LifeInThePitOfHell/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Compat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Compat.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Dead.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Dead.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/EnemyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/EnemyController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/HitPoints.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/HitPoints.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Meal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Meal.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/UI/UIHealthBar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/UI/UIHealthBar.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +43,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Script/Dead.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/PlayerRotation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/CameraController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Unity/CardGame/Assets/Scripts/Buildings/SpawnerBuilding/SpawnedObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Unity/Factory/Assets/Scripts/FactoryCamera/FactoryCameraMoving.cs" root0="SKIP_HIGHLIGHTING" />
@@ -42,9 +54,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Script/Meal.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/EnemyController.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/CameraController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/UI/UIHealthBar.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Dead.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/HitPoints.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Meal.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Compat.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/EnemyController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/PlayerRotation.cs" />
       </list>
     </option>
   </component>
@@ -88,7 +106,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1688381742628</updated>
-      <workItem from="1688381759104" duration="4058000" />
+      <workItem from="1688381759104" duration="4948000" />
+      <workItem from="1688531147946" duration="4411000" />
     </task>
     <servers />
   </component>
@@ -107,6 +126,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />

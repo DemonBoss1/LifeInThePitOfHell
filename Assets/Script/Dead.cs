@@ -21,7 +21,11 @@ namespace Script
                 playAudio();
                 _isPlayAudio = true;
                 _playAudioTimer = 1.0f;
-                if(HP.IsPlayer) DeadUI.SetActive(true);
+                if (HP.IsPlayer)
+                {
+                    DeadUI.SetActive(true);
+                    PlayerController.TurnOffControlls();
+                }
             }
 
             if (_isPlayAudio)

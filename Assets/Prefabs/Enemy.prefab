@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 3955428019522774641}
   - component: {fileID: 887211417868732712}
   - component: {fileID: 6529677968353653014}
+  - component: {fileID: 1690440955761903599}
   m_Layer: 13
   m_Name: Enemy
   m_TagString: Untagged
@@ -37,7 +38,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3275462822121487040
 SpriteRenderer:
@@ -165,6 +166,8 @@ MonoBehaviour:
   currentHitPoints: 0
   timeInvincible: 0.5
   isPlayer: 0
+  triggered: 0
+  eat: 0
   blowBody: {fileID: 8300000, guid: f4eb4c84c9906514cb73117f4bc302a2, type: 3}
 --- !u!114 &1834922989178564528
 MonoBehaviour:
@@ -181,6 +184,7 @@ MonoBehaviour:
   HP: {fileID: 3577276062743783567}
   projectilePrefab: {fileID: 4078511792662054654, guid: 622df969d1007a0439cd724535cb3e01, type: 3}
   bodyCut: {fileID: 8300000, guid: 9135e80d10291f7429806c6473b7be8e, type: 3}
+  DeadUI: {fileID: 0}
 --- !u!114 &3955428019522774641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -317,3 +321,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1690440955761903599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3567187387134627923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e327f3e4102869544ad973ac95a9d6a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  left: {fileID: 21300000, guid: 763f30a5c4037b240bf351a2d138410d, type: 3}
+  right: {fileID: 21300000, guid: a00617c927a4bc54498e01c95fed8e53, type: 3}
+  down: {fileID: 21300000, guid: 86de2c551cc647f40bbec20ae3f33147, type: 3}
+  up: {fileID: 21300000, guid: bbee0073db0ebde4ea9bdc963ea8cec4, type: 3}
+  playerSprite: {fileID: 3275462822121487040}
