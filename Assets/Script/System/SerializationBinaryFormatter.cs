@@ -1,8 +1,8 @@
-using UnityEngine;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
+using UnityEngine;
 
-namespace Script
+namespace Script.System
 {
     public class SerializationBinaryFormatter : MonoBehaviour
     {

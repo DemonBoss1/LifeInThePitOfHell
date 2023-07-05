@@ -1,3 +1,5 @@
+using System;
+using Script.System;
 using UnityEngine;
 
 namespace Script
@@ -55,6 +57,22 @@ namespace Script
                 _currentXp -= _requiredXp;
                 _requiredXp *= 2;
                 LevelUp();
+            }
+        }
+
+        public void setLevel(int level)
+        {
+            _attack = 2;
+            _protection = 1;
+            _dexterity = 1;
+            _maxHitPoint = 5;
+            _requiredXp = 10;
+            int index = 1;
+            while (index < level)
+            {
+                _requiredXp *= 2;
+                LevelUp();
+                index++;
             }
         }
     }

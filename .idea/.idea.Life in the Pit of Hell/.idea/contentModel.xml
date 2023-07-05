@@ -58,20 +58,24 @@
         <e p="Prefabs" t="Include" />
         <e p="Scenes" t="Include" />
         <e p="Script" t="Include">
-          <e p="CameraController.cs" t="Include" />
           <e p="CharacterCharacteristics.cs" t="Include" />
           <e p="Compat.cs" t="Include" />
           <e p="Damager.cs" t="Include" />
           <e p="Dead.cs" t="Include" />
           <e p="EnemyController.cs" t="Include" />
-          <e p="FrameRate.cs" t="Include" />
-          <e p="GameController.cs" t="Include" />
           <e p="HitPoints.cs" t="Include" />
           <e p="Meal.cs" t="Include" />
-          <e p="PlayerCombat.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />
           <e p="PlayerRotation.cs" t="Include" />
-          <e p="Teleport.cs" t="Include" />
+          <e p="System" t="Include">
+            <e p="CameraController.cs" t="Include" />
+            <e p="EnemyFactory.cs" t="Include" />
+            <e p="FrameRate.cs" t="Include" />
+            <e p="GameController.cs" t="Include" />
+            <e p="Serialization.cs" t="Include" />
+            <e p="SerializationBinaryFormatter.cs" t="Include" />
+            <e p="Teleport.cs" t="Include" />
+          </e>
           <e p="UI" t="Include">
             <e p="PauseMenu.cs" t="Include" />
             <e p="UIDayControl.cs" t="Include" />

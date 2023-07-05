@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Script
+namespace Script.System
 {
     public class Teleport : MonoBehaviour
     {

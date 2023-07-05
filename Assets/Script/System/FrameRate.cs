@@ -1,9 +1,12 @@
 using UnityEngine;
 
-public class FrameRate : MonoBehaviour
+namespace Script.System
 {
-    private void Start()
+    public class FrameRate : MonoBehaviour
     {
-        Application.targetFrameRate = 120;
+        private void Start()
+        {
+            Application.targetFrameRate = 120;
+        }
     }
 }
