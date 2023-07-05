@@ -4,13 +4,13 @@ namespace Script
 {
     public class CharacterCharacteristics : MonoBehaviour
     {
-        private float attack = 1;
+        private float _attack = 1;
 
-        public float Attack => attack;
+        public float Attack => _attack;
 
-        private float protection = 1;
+        private float _protection = 1;
 
-        public float Protection => protection;
+        public float Protection => _protection;
 
         private float _dexterity = 1;
 
@@ -20,12 +20,26 @@ namespace Script
 
         public float MAXHitPoint => _maxHitPoint;
 
-        void levelUp()
+        private int _requiredXp = 10;
+        private int _currentXp = 0;
+
+        void LevelUp()
         {
-            attack *= 1.1f;
-            protection *= 1.1f;
+            _attack *= 1.1f;
+            _protection *= 1.1f;
             _dexterity *= 1.1f;
             _dexterity *= 1.1f;
+        }
+
+        public void getXP(int value)
+        {
+            _currentXp += value;
+            if (_currentXp > _requiredXp)
+            {
+                _currentXp -= _requiredXp;
+                _requiredXp *= 2;
+                LevelUp();
+            }
         }
     }
 }
