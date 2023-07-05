@@ -34,6 +34,7 @@ namespace Script
                 controllerCanvas.SetActive(false);
             #elif UNITY_ANDROID
                 PlayerPrefs.SetInt("Platform", 1);
+                controllerCanvas.SetActive(true);
             #endif
             _platform = PlayerPrefs.GetInt("Platform");
             _rotation = GetComponent<PlayerRotation>();
