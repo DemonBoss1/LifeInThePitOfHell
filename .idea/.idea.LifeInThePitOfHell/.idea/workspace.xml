@@ -19,12 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33e504e7-a532-41a3-8707-5aefeeecd5bc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.LifeInThePitOfHell/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LifeInThePitOfHell/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.LifeInThePitOfHell/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LifeInThePitOfHell/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/HitPoints.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/HitPoints.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/PlayerController.cs" afterDir="false" />
-    </list>
+    <list default="true" id="33e504e7-a532-41a3-8707-5aefeeecd5bc" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -101,7 +96,7 @@
       <option name="presentableId" value="Default" />
       <updated>1688381742628</updated>
       <workItem from="1688381759104" duration="4948000" />
-      <workItem from="1688531147946" duration="5717000" />
+      <workItem from="1688531147946" duration="6113000" />
     </task>
     <servers />
   </component>
