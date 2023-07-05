@@ -59,6 +59,7 @@
         <e p="Scenes" t="Include" />
         <e p="Script" t="Include">
           <e p="CameraController.cs" t="Include" />
+          <e p="CharacterCharacteristics.cs" t="Include" />
           <e p="Compat.cs" t="Include" />
           <e p="Damager.cs" t="Include" />
           <e p="Dead.cs" t="Include" />

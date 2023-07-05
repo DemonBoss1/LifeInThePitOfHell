@@ -20,8 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c27d656-66fa-4961-aa8d-8b2259de6089" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/UI/PauseMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/UI/PauseMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Life in the Pit of Hell/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Life in the Pit of Hell/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Life in the Pit of Hell/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Life in the Pit of Hell/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +34,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Script/Compat.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/UI/UIMainMenu.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/CharacterCharacteristics.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/PlayerCombat.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -50,6 +51,7 @@
         <option value="$PROJECT_DIR$/Assets/Script/Dead.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Damager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/UI/PauseMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/CharacterCharacteristics.cs" />
       </list>
     </option>
   </component>
@@ -101,7 +103,7 @@
       <updated>1688410680459</updated>
       <workItem from="1688410688451" duration="878000" />
       <workItem from="1688458652689" duration="10425000" />
-      <workItem from="1688490871397" duration="3957000" />
+      <workItem from="1688490871397" duration="5406000" />
     </task>
     <servers />
   </component>
@@ -126,6 +128,10 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="93" y="93" width="1255" height="727" key="VCS.FileHistoryDialog" timestamp="1688548293600">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="93" y="93" width="1255" height="727" key="VCS.FileHistoryDialog/0.0.1440.912@0.0.1440.912" timestamp="1688548293600" />
     <state x="377" y="209" key="run.anything.popup" timestamp="1688474150392">
       <screen x="0" y="0" width="1440" height="912" />
     </state>
