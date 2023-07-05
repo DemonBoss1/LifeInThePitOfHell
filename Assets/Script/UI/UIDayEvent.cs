@@ -16,23 +16,15 @@ public class UIDayEvent : MonoBehaviour
     {
         DayEvent = this;
     }
-
-    void Update()
-    {
-        if(isEvent){
-            EventTimer -= Time.deltaTime;
-            if (EventTimer < 0)
-            {
-                eventPanel.SetActive(false);
-                isEvent = false;
-            }
-        }
-    }
-
     public void PlayEvent()
     {
         eventPanel.SetActive(true);
         isEvent = true;
-        EventTimer = timeEvent;
+        Invoke("EndEvent", timeEvent);
+    }
+    private void EndEvent()
+    {
+        eventPanel.SetActive(false);
+        isEvent = false;
     }
 }

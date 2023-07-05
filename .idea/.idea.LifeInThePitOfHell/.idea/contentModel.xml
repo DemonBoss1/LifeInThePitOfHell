@@ -61,6 +61,7 @@
         <e p="Scenes" t="Include" />
         <e p="Script" t="Include">
           <e p="CameraController.cs" t="Include" />
+          <e p="CharacterCharacteristics.cs" t="Include" />
           <e p="Compat.cs" t="Include" />
           <e p="Damager.cs" t="Include" />
           <e p="Dead.cs" t="Include" />
@@ -75,6 +76,8 @@
           <e p="Teleport.cs" t="Include" />
           <e p="UI" t="Include">
             <e p="PauseMenu.cs" t="Include" />
+            <e p="UIDayControl.cs" t="Include" />
+            <e p="UIDayEvent.cs" t="Include" />
             <e p="UIHealthBar.cs" t="Include" />
             <e p="UIMainMenu.cs" t="Include" />
           </e>
