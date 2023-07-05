@@ -73,6 +73,8 @@
           <e p="PlayerCombat.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />
           <e p="PlayerRotation.cs" t="Include" />
+          <e p="Serialization.cs" t="Include" />
+          <e p="SerializationBinaryFormatter.cs" t="Include" />
           <e p="Teleport.cs" t="Include" />
           <e p="UI" t="Include">
             <e p="PauseMenu.cs" t="Include" />

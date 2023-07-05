@@ -19,7 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33e504e7-a532-41a3-8707-5aefeeecd5bc" name="Default Changelist" comment="" />
+    <list default="true" id="33e504e7-a532-41a3-8707-5aefeeecd5bc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.LifeInThePitOfHell/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LifeInThePitOfHell/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.LifeInThePitOfHell/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LifeInThePitOfHell/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/CharacterCharacteristics.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CharacterCharacteristics.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,12 +36,14 @@
     <setting file="file://$PROJECT_DIR$/Assets/Script/Dead.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/PlayerRotation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/FrameRate.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/SerializationBinaryFormatter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/CameraController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Unity/CardGame/Assets/Scripts/Buildings/SpawnerBuilding/SpawnedObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Unity/Factory/Assets/Scripts/FactoryCamera/FactoryCameraMoving.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/EnemyController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Unity/Factory/Assets/Scripts/Grid/GridController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Unity/Factory/Assets/Scripts/Grid/BuildingsGrid.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Serialization.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -52,6 +58,10 @@
         <option value="$PROJECT_DIR$/Assets/Script/HitPoints.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/FrameRate.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/UI/UIDayEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/SerializationBinaryFormatter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Serialization.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/CharacterCharacteristics.cs" />
       </list>
     </option>
   </component>
@@ -97,7 +107,7 @@
       <updated>1688381742628</updated>
       <workItem from="1688381759104" duration="4948000" />
       <workItem from="1688531147946" duration="6113000" />
-      <workItem from="1688558147751" duration="637000" />
+      <workItem from="1688558147751" duration="3166000" />
     </task>
     <servers />
   </component>
