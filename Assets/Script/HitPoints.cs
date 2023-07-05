@@ -1,6 +1,6 @@
+using Script.System;
 using Script.UI;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace Script
 {
@@ -22,7 +22,25 @@ namespace Script
         public AudioClip blowBody;
         void Start()
         {
-            currentHitPoints = characteristics.MAXHitPoint;
+            if (isPlayer)
+            {
+                Serialization data = SerializationBinaryFormatter.LoadData();
+                if (data != null)
+                {
+                    currentHitPoints = data.currentHP;
+                    UIHealthBar.instance.SetValue(currentHitPoints / data.MAXHitPoint);
+                }
+                else
+                {
+                    currentHitPoints = characteristics.MAXHitPoint;
+                }
+
+                characteristics.currentHp = currentHitPoints;
+            }
+            else
+            {
+                currentHitPoints = characteristics.MAXHitPoint;
+            }
         }
 
         void Update()
@@ -40,9 +58,12 @@ namespace Script
                 isInvincible = true;
                 invincibleTimer = timeInvincible * characteristics.Dexterity;
                 if (currentHitPoints + value > 0) playAudio();
+                print(value);
                 value = Mathf.Min(0, value + characteristics.Protection);
+                
             }
             currentHitPoints = Mathf.Clamp(currentHitPoints + value, 0, characteristics.MAXHitPoint);
+            characteristics.currentHp = currentHitPoints;
             if(isPlayer) UIHealthBar.instance.SetValue(currentHitPoints/characteristics.MAXHitPoint);
 
             Debug.Log(currentHitPoints + "/" + characteristics.MAXHitPoint);

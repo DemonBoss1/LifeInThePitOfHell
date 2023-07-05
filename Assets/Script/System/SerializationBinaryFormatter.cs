@@ -6,7 +6,7 @@ namespace Script.System
 {
     public class SerializationBinaryFormatter : MonoBehaviour
     {
-        public void SaveData(Serialization data)
+        public static void SaveData(Serialization data)
         {
             BinaryFormatter formatter = new BinaryFormatter();
             using (FileStream fs = new FileStream(Application.persistentDataPath + "/PlayerData.data", FileMode.OpenOrCreate))
@@ -15,7 +15,7 @@ namespace Script.System
             }
         }
 
-        public Serialization LoadData()
+        public static Serialization LoadData()
         {
             if (File.Exists(Application.persistentDataPath + "/PlayerData.data"))
             {

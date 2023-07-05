@@ -9,7 +9,7 @@ namespace Script
 
         [SerializeField] private CharacterCharacteristics characteristics;
 
-        private void Awake()
+        private void Start()
         {
             if (characteristics != null) damage = characteristics.Attack;
         }

@@ -1,6 +1,8 @@
 using System;
 using Script.System;
+using Script.UI;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Script
 {
@@ -24,29 +26,38 @@ namespace Script
 
         private int _requiredXp = 10;
         private int _currentXp = 0;
-        private Serialization _data;
-        [SerializeField] private SerializationBinaryFormatter serialization;
-        private void Start()
+        [SerializeField] private int _level = 1;
+        public int Level => _level;
+        public float currentHp;
+        [SerializeField] private bool mob;
+        private void Awake()
         {
-            Serialization data = serialization.LoadData();
-            if (data != null)
+            if (!mob)
             {
-                _attack = data.Attack;
-                _protection = data.Protection;
-                _dexterity = data.Dexterity;
-                _maxHitPoint = data.MAXHitPoint;
-                _currentXp = data.currentXP;
-                _requiredXp = data.requiredXP;
+                Serialization data = SerializationBinaryFormatter.LoadData();
+                if (data != null)
+                {
+                    _attack = data.Attack;
+                    _protection = data.Protection;
+                    _dexterity = data.Dexterity;
+                    _maxHitPoint = data.MAXHitPoint;
+                    _currentXp = data.currentXP;
+                    _requiredXp = data.requiredXP;
+                    _level = data.level;
+                }
             }
         }
         void LevelUp()
         {
-            _attack *= 1.5f;
+            _attack *= 1.6f;
             _protection *= 1.5f;
             _dexterity *= 1.1f;
             _maxHitPoint *= 1.5f;
-            _data = new Serialization(_attack, _protection, _dexterity, _maxHitPoint, _currentXp, _requiredXp);
-            serialization.SaveData(_data);
+            _level += 1;
+            if (!mob)
+            {
+                SaveData();
+            }
         }
 
         public void getXP(int value)
@@ -74,6 +85,13 @@ namespace Script
                 LevelUp();
                 index++;
             }
+        }
+
+        public void SaveData()
+        {
+            Serialization data = new Serialization(_attack, _protection, _dexterity, _maxHitPoint, _currentXp, 
+                _requiredXp,_level, UIDayControl.DayControl.Day, currentHp);
+            SerializationBinaryFormatter.SaveData(data);
         }
     }
 }
