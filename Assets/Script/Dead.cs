@@ -15,6 +15,13 @@ namespace Script
         
         [SerializeField] private GameObject DeadUI;
 
+        private GameObject player;
+        private CharacterCharacteristics _characteristics;
+
+        private void Awake() {
+            player = GameObject.FindGameObjectWithTag("Player");
+            _characteristics = player.GetComponent<CharacterCharacteristics>();
+        }
         void Update()
         {
             if((HP.HP <= 0)&&(!_isPlayAudio)){
@@ -37,10 +44,12 @@ namespace Script
                     {
                         Instantiate(projectilePrefab, transform.position, Quaternion.identity);
                         Destroy(gameObject);
+                        EnemyCounter.count--;
                     }
                     else
                     {
                         SceneManager.LoadScene(0);
+                        _characteristics.SaveDataDead();
                     }
                     
                 }

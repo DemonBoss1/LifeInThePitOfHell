@@ -1,6 +1,7 @@
 using System;
 using Script.System;
 using Script.UI;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -30,6 +31,8 @@ namespace Script
         public int Level => _level;
         public float currentHp;
         [SerializeField] private bool mob;
+
+        [SerializeField] private TextMeshProUGUI levelUI;
         private void Awake()
         {
             if (!mob)
@@ -44,20 +47,23 @@ namespace Script
                     _currentXp = data.currentXP;
                     _requiredXp = data.requiredXP;
                     _level = data.level;
+                    levelUI.text = _level + " level";
                 }
             }
         }
         void LevelUp()
         {
-            _attack *= 1.6f;
-            _protection *= 1.5f;
-            _dexterity *= 1.1f;
-            _maxHitPoint *= 1.5f;
+            _attack *= 1.2f;
+            _protection *= 1.2f;
+            _dexterity *= 1.01f;
+            _maxHitPoint *= 1.2f;
             _level += 1;
             if (!mob)
             {
                 SaveData();
+                levelUI.text = _level + " level";
             }
+            else levelUI.text = _level + "";
         }
 
         public void getXP(int value)
@@ -91,6 +97,12 @@ namespace Script
         {
             Serialization data = new Serialization(_attack, _protection, _dexterity, _maxHitPoint, _currentXp, 
                 _requiredXp,_level, UIDayControl.DayControl.Day, currentHp);
+            SerializationBinaryFormatter.SaveData(data);
+        }
+        public void SaveDataDead()
+        {
+            Serialization data = new Serialization(_attack, _protection, _dexterity, _maxHitPoint, _currentXp,
+                _requiredXp, _level, UIDayControl.DayControl.Day / 2, _maxHitPoint * 0.1f);
             SerializationBinaryFormatter.SaveData(data);
         }
     }

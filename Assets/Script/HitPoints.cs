@@ -1,6 +1,7 @@
 using Script.System;
 using Script.UI;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Script
 {
@@ -16,6 +17,9 @@ namespace Script
         [HideInInspector] public bool eat;
 
         [SerializeField] private CharacterCharacteristics characteristics;
+
+        [SerializeField] private Image PanelRaycaster;
+        private float weaghPanel;
 
         public bool IsPlayer => isPlayer;
 
@@ -39,6 +43,7 @@ namespace Script
             }
             else
             {
+                weaghPanel = PanelRaycaster.rectTransform.rect.width;
                 currentHitPoints = characteristics.MAXHitPoint;
             }
         }
@@ -58,15 +63,16 @@ namespace Script
                 isInvincible = true;
                 invincibleTimer = timeInvincible * characteristics.Dexterity;
                 if (currentHitPoints + value > 0) playAudio();
-                print(value);
+                //print(value);
                 value = Mathf.Min(0, value + characteristics.Protection);
                 
             }
             currentHitPoints = Mathf.Clamp(currentHitPoints + value, 0, characteristics.MAXHitPoint);
             characteristics.currentHp = currentHitPoints;
-            if(isPlayer) UIHealthBar.instance.SetValue(currentHitPoints/characteristics.MAXHitPoint);
+            if (isPlayer) UIHealthBar.instance.SetValue(currentHitPoints / characteristics.MAXHitPoint);
+            else SetValue(currentHitPoints / characteristics.MAXHitPoint);
 
-            Debug.Log(currentHitPoints + "/" + characteristics.MAXHitPoint);
+            //Debug.Log(currentHitPoints + "/" + characteristics.MAXHitPoint);
         }
 
         void playAudio()
@@ -87,6 +93,9 @@ namespace Script
         }
         void damage(int value){
         
+        }
+        public void SetValue(float value){
+            PanelRaycaster.rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, weaghPanel * value);
         }
     }
 }

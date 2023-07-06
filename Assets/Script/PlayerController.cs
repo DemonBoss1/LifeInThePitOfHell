@@ -84,7 +84,7 @@ namespace Script
             _hitTimer = timeHit;
             audioSource.PlayOneShot(swingSword);
             Compat.Attack(this, _direction, 0.5f, characteristics.Attack);
-            Debug.Log("Attack");
+            //Debug.Log("Attack");
         }
 
         public static void TurnOffControlls()
