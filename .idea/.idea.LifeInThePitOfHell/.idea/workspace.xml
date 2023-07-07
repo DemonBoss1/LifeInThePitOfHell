@@ -25,14 +25,7 @@
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/CharacterCharacteristics.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CharacterCharacteristics.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Damager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Damager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/HitPoints.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/HitPoints.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/System/EnemyFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/System/EnemyFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/System/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/System/GameController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/System/Serialization.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/System/Serialization.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/System/SerializationBinaryFormatter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/System/SerializationBinaryFormatter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/System/Teleport.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/System/Teleport.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/UI/UIDayControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/UI/UIDayControl.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,9 +65,9 @@
         <option value="$PROJECT_DIR$/Assets/Script/UI/UIDayControl.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/System/Teleport.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/System/Serialization.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/HitPoints.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Damager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/CharacterCharacteristics.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/HitPoints.cs" />
       </list>
     </option>
   </component>
@@ -121,7 +114,8 @@
       <workItem from="1688381759104" duration="4948000" />
       <workItem from="1688531147946" duration="6113000" />
       <workItem from="1688558147751" duration="3837000" />
-      <workItem from="1688578444518" duration="5637000" />
+      <workItem from="1688578444518" duration="5928000" />
+      <workItem from="1688715543918" duration="1872000" />
     </task>
     <servers />
   </component>

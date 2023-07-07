@@ -47,7 +47,7 @@ namespace Script
                     _currentXp = data.currentXP;
                     _requiredXp = data.requiredXP;
                     _level = data.level;
-                    levelUI.text = _level + " level";
+                    levelUI.text = "Level: " + _level;
                 }
             }
         }
@@ -61,9 +61,9 @@ namespace Script
             if (!mob)
             {
                 SaveData();
-                levelUI.text = _level + " level";
+                levelUI.text = "Level: " + _level;
             }
-            else levelUI.text = _level + "";
+            else levelUI.text = "Level: " + _level;
         }
 
         public void getXP(int value)

@@ -71,6 +71,7 @@
           <e p="PlayerRotation.cs" t="Include" />
           <e p="System" t="Include">
             <e p="CameraController.cs" t="Include" />
+            <e p="EnemyCounter.cs" t="Include" />
             <e p="EnemyFactory.cs" t="Include" />
             <e p="FrameRate.cs" t="Include" />
             <e p="GameController.cs" t="Include" />

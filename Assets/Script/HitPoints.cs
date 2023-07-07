@@ -20,6 +20,7 @@ namespace Script
 
         [SerializeField] private Image PanelRaycaster;
         private float weaghPanel;
+        [SerializeField] private Text hpCount;
 
         public bool IsPlayer => isPlayer;
 
@@ -96,6 +97,7 @@ namespace Script
         }
         public void SetValue(float value){
             PanelRaycaster.rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, weaghPanel * value);
+            hpCount.text =Mathf.RoundToInt(currentHitPoints) + "/" + Mathf.RoundToInt(characteristics.MAXHitPoint);
         }
     }
 }
