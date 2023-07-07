@@ -1,39 +1,42 @@
 using Script.System;
 using Script.UI;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 namespace Script
 {
     public class HitPoints : MonoBehaviour
     {
-        public float HP => currentHitPoints;
-        [SerializeField]float currentHitPoints;
-        [SerializeField] float timeInvincible = 2.0f;
-        bool isInvincible;
-        float invincibleTimer;
-        [SerializeField]bool isPlayer;
+        public float Hp => currentHitPoints;
+        [SerializeField] private float currentHitPoints;
+        [SerializeField] private float timeInvincible = 2.0f;
+        private bool _isInvincible;
+        private float _invincibleTimer;
+        [SerializeField] private bool isPlayer;
         [HideInInspector] public bool triggered;
         [HideInInspector] public bool eat;
 
         [SerializeField] private CharacterCharacteristics characteristics;
-
-        [SerializeField] private Image PanelRaycaster;
-        private float weaghPanel;
         [SerializeField] private Text hpCount;
 
         public bool IsPlayer => isPlayer;
 
         public AudioClip blowBody;
+        private UIHealthBar _uiHealthBar;
+        private AudioSource _audioPlayer;
+
         void Start()
         {
+            _audioPlayer = GetComponent<AudioSource>();
+            _uiHealthBar = GetComponent<UIHealthBar>();
             if (isPlayer)
             {
                 Serialization data = SerializationBinaryFormatter.LoadData();
                 if (data != null)
                 {
-                    currentHitPoints = data.currentHP;
-                    UIHealthBar.instance.SetValue(currentHitPoints / data.MAXHitPoint);
+                    currentHitPoints = data.currentHp;
+                    _uiHealthBar.SetValue(currentHitPoints / data.maxHitPoint);
                 }
                 else
                 {
@@ -44,44 +47,39 @@ namespace Script
             }
             else
             {
-                weaghPanel = PanelRaycaster.rectTransform.rect.width;
                 currentHitPoints = characteristics.MAXHitPoint;
             }
         }
 
         void Update()
         {
-            if(isInvincible){
-                invincibleTimer -= Time.deltaTime;
-                if(invincibleTimer < 0)
-                    isInvincible = false;
+            if(_isInvincible){
+                _invincibleTimer -= Time.deltaTime;
+                if(_invincibleTimer < 0)
+                    _isInvincible = false;
             }
         }
-        public void changeHP(float value){
+        public void ChangeHp(float value){
             if(value < 0){
-                if(isInvincible) 
+                if(_isInvincible) 
                     return;
-                isInvincible = true;
-                invincibleTimer = timeInvincible * characteristics.Dexterity;
-                if (currentHitPoints + value > 0) playAudio();
-                //print(value);
+                _isInvincible = true;
+                _invincibleTimer = timeInvincible * characteristics.Dexterity;
+                if (currentHitPoints + value > 0) PlayAudio();
                 value = Mathf.Min(0, value + characteristics.Protection);
                 
             }
             currentHitPoints = Mathf.Clamp(currentHitPoints + value, 0, characteristics.MAXHitPoint);
             characteristics.currentHp = currentHitPoints;
-            if (isPlayer) UIHealthBar.instance.SetValue(currentHitPoints / characteristics.MAXHitPoint);
+            if (isPlayer) _uiHealthBar.SetValue(currentHitPoints / characteristics.MAXHitPoint);
             else SetValue(currentHitPoints / characteristics.MAXHitPoint);
-
-            //Debug.Log(currentHitPoints + "/" + characteristics.MAXHitPoint);
         }
 
-        void playAudio()
+        void PlayAudio()
         {
-            AudioSource audioPlayer = GetComponent<AudioSource>();
-            if (audioPlayer != null)
+            if (_audioPlayer != null)
             {
-                audioPlayer.PlayOneShot(blowBody);
+                _audioPlayer.PlayOneShot(blowBody);
             }
         }
 
@@ -89,15 +87,9 @@ namespace Script
         {
             eat = true;
         }
-        void heal(int value){
-        
-        }
-        void damage(int value){
-        
-        }
         public void SetValue(float value){
-            PanelRaycaster.rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, weaghPanel * value);
-            hpCount.text =Mathf.RoundToInt(currentHitPoints) + "/" + Mathf.RoundToInt(characteristics.MAXHitPoint);
+            _uiHealthBar.SetValue(currentHitPoints / characteristics.MAXHitPoint);
+            hpCount.text = Mathf.RoundToInt(currentHitPoints) + "/" +  Mathf.RoundToInt(characteristics.MAXHitPoint);
         }
     }
 }

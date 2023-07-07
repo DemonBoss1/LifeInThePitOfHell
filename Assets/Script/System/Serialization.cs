@@ -1,24 +1,31 @@
 using System;
+using UnityEngine.Serialization;
 
 namespace Script.System
 {
     [Serializable]
     public class Serialization
     {
-        public float Attack, Protection, Dexterity, MAXHitPoint, currentHP;
-        public int currentXP, requiredXP, level, day;
+        [FormerlySerializedAs("Attack")] public float attack;
+        [FormerlySerializedAs("Protection")] public float protection;
+        [FormerlySerializedAs("Dexterity")] public float dexterity;
+        [FormerlySerializedAs("MAXHitPoint")] public float maxHitPoint;
+        [FormerlySerializedAs("currentHP")] public float currentHp;
+        [FormerlySerializedAs("currentXP")] public int currentXp;
+        [FormerlySerializedAs("requiredXP")] public int requiredXp;
+        public int level, day;
 
-        public Serialization(float a, float p, float d, float hp, int cXP, int rXP, int lvl, int day, float cHP)
+        public Serialization(float a, float p, float d, float hp, int cXp, int rXp, int lvl, int day, float cHp)
         {
-            Attack = a;
-            Protection = p;
-            Dexterity = d;
-            MAXHitPoint = hp;
-            currentXP = cXP;
-            requiredXP = rXP;
+            attack = a;
+            protection = p;
+            dexterity = d;
+            maxHitPoint = hp;
+            currentXp = cXp;
+            requiredXp = rXp;
             level = lvl;
             this.day = day;
-            currentHP = cHP;
+            currentHp = cHp;
         }
     }
 }

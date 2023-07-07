@@ -1,11 +1,13 @@
+using Script.System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 
 namespace Script
 {
     public class Dead : MonoBehaviour
     {
-        [SerializeField] HitPoints HP;
+        [FormerlySerializedAs("HP")] [SerializeField] HitPoints hp;
         [SerializeField] GameObject projectilePrefab;
 
         [SerializeField] private AudioClip bodyCut;
@@ -13,25 +15,32 @@ namespace Script
         private bool _isPlayAudio;
         private float _playAudioTimer;
         
-        [SerializeField] private GameObject DeadUI;
+        [FormerlySerializedAs("DeadUI")] [SerializeField] private GameObject deadUI;
 
-        private GameObject player;
+        private GameObject _player;
         private CharacterCharacteristics _characteristics;
+        private AudioSource _audioPlayer;
+
+        private void Start()
+        {
+            _audioPlayer = GetComponent<AudioSource>();
+        }
 
         private void Awake() {
-            player = GameObject.FindGameObjectWithTag("Player");
-            _characteristics = player.GetComponent<CharacterCharacteristics>();
+            _player = GameObject.FindGameObjectWithTag("Player");
+            _characteristics = _player.GetComponent<CharacterCharacteristics>();
         }
         void Update()
         {
-            if((HP.HP <= 0)&&(!_isPlayAudio)){
-                playAudio();
+            if((hp.Hp <= 0)&&(!_isPlayAudio)){
+                PlayAudio();
                 _isPlayAudio = true;
                 _playAudioTimer = 1.0f;
-                if (HP.IsPlayer)
+                if (hp.IsPlayer)
                 {
-                    DeadUI.SetActive(true);
+                    deadUI.SetActive(true);
                     PlayerController.TurnOffControlls();
+                    SerializationBinaryFormatter.DeleteData();
                 }
             }
 
@@ -40,27 +49,29 @@ namespace Script
                 _playAudioTimer -= Time.deltaTime;
                 if (_playAudioTimer < 0)
                 {
-                    if (!HP.IsPlayer)
+                    if (!hp.IsPlayer)
                     {
-                        Instantiate(projectilePrefab, transform.position, Quaternion.identity);
+                        Meal meal = Instantiate(projectilePrefab, transform.position, Quaternion.identity).GetComponent<Meal>();
+                        meal.value = Mathf.RoundToInt(GetComponent<CharacterCharacteristics>().MAXHitPoint / 3);
+                        _characteristics.GETXp(GetComponent<CharacterCharacteristics>().Level * 5);
+                        GameController.gameController.enemies.Remove(gameObject);
                         Destroy(gameObject);
-                        EnemyCounter.count--;
+                        GameController.gameController.WallCheck();
+                        EnemyCounter.Count--;
                     }
                     else
                     {
                         SceneManager.LoadScene(0);
-                        _characteristics.SaveDataDead();
                     }
                     
                 }
             }
         }
-        void playAudio()
+        void PlayAudio()
         {
-            AudioSource audioPlayer = GetComponent<AudioSource>();
-            if (audioPlayer != null)
+            if (_audioPlayer != null)
             {
-                audioPlayer.PlayOneShot(bodyCut);
+                _audioPlayer.PlayOneShot(bodyCut);
             }
         }
     }

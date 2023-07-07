@@ -5,9 +5,9 @@ namespace Script
 {
     public class PlayerController : MonoBehaviour
     {
-        float horizontal;
-        float vertical;
-        float speed = 3.0f;
+        float _horizontal;
+        float _vertical;
+        float _speed = 3.0f;
         public Vector2 Position => rigidbody2d.position + Vector2.up * 0.5f;
 
 
@@ -22,7 +22,7 @@ namespace Script
         public static GameObject ControllerCanvas;
 
         private bool _isHit;
-        private float timeHit = 0.5f;
+        private float _timeHit = 0.5f;
         private float _hitTimer;
         private Vector2 _direction;
 
@@ -45,16 +45,16 @@ namespace Script
         void Update()
         {
             if(_platform == 0){
-                horizontal = Input.GetAxis("Horizontal");
-                vertical = Input.GetAxis("Vertical");
+                _horizontal = Input.GetAxis("Horizontal");
+                _vertical = Input.GetAxis("Vertical");
             }
             else if(_platform == 1){
-                horizontal = joystick.Horizontal;
-                vertical = joystick.Vertical;
+                _horizontal = joystick.Horizontal;
+                _vertical = joystick.Vertical;
             }
-            if (horizontal != 0 || vertical != 0)
+            if (_horizontal != 0 || _vertical != 0)
             {
-                _direction = new Vector2(horizontal, vertical).normalized;
+                _direction = new Vector2(_horizontal, _vertical).normalized;
             }
             _rotation.Rotate(_direction.x, _direction.y);
 
@@ -70,8 +70,8 @@ namespace Script
         }
         private void FixedUpdate() {
             Vector2 position = rigidbody2d.position;
-            position.x = position.x + speed * horizontal * Time.deltaTime;
-            position.y = position.y + speed * vertical * Time.deltaTime;
+            position.x = position.x + _speed * _horizontal * Time.deltaTime;
+            position.y = position.y + _speed * _vertical * Time.deltaTime;
         
             rigidbody2d.MovePosition(position);
         }
@@ -81,7 +81,7 @@ namespace Script
             if(_isHit) 
                 return;
             _isHit = true;
-            _hitTimer = timeHit;
+            _hitTimer = _timeHit;
             audioSource.PlayOneShot(swingSword);
             Compat.Attack(this, _direction, 0.5f, characteristics.Attack);
             //Debug.Log("Attack");

@@ -10,14 +10,14 @@ public class VariableJoystick : Joystick
     [SerializeField] private float moveThreshold = 1;
     [SerializeField] private JoystickType joystickType = JoystickType.Fixed;
 
-    private Vector2 fixedPosition = Vector2.zero;
+    private Vector2 _fixedPosition = Vector2.zero;
 
     public void SetMode(JoystickType joystickType)
     {
         this.joystickType = joystickType;
         if(joystickType == JoystickType.Fixed)
         {
-            background.anchoredPosition = fixedPosition;
+            background.anchoredPosition = _fixedPosition;
             background.gameObject.SetActive(true);
         }
         else
@@ -27,7 +27,7 @@ public class VariableJoystick : Joystick
     protected override void Start()
     {
         base.Start();
-        fixedPosition = background.anchoredPosition;
+        _fixedPosition = background.anchoredPosition;
         SetMode(joystickType);
     }
 

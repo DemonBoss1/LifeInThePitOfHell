@@ -4,7 +4,7 @@ namespace Script
 {
     public class Meal : MonoBehaviour
     {
-        [SerializeField]int value;
+        public int value;
         private bool _triggered;
         private HitPoints _character;
         void OnTriggerEnter2D(Collider2D other)
@@ -44,7 +44,7 @@ namespace Script
         {
             if (_triggered && _character != null)
             {
-                _character.changeHP(value);
+                _character.ChangeHp(value);
                 Destroy(gameObject);
             }
         }

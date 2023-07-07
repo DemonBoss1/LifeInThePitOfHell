@@ -10,8 +10,8 @@ namespace Script.System
             {
                 GameObject enemy = Instantiate(projectilePrefab, pos, Quaternion.identity);
                 CharacterCharacteristics characteristics = enemy.GetComponent<CharacterCharacteristics>();
-                characteristics.setLevel(level);
-                EnemyCounter.count++;
+                characteristics.SetLevel(level);
+                GameController.gameController.enemies.Add(enemy);
             }
         }
     }

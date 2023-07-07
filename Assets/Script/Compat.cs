@@ -15,9 +15,7 @@ namespace Script
                 HitPoints hp = enemy.GetComponent<HitPoints>();
                 if (hp != null)
                 {
-                    hp.changeHP(-damage);
-                    CharacterCharacteristics characteristics = attacker.GetComponent<CharacterCharacteristics>();
-                    characteristics.getXP(5);
+                    hp.ChangeHp(-damage);
                 }
             }
         }

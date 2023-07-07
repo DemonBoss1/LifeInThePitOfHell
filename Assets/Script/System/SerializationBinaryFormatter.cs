@@ -32,5 +32,13 @@ namespace Script.System
                 return null;
             }
         }
+
+        public static void DeleteData()
+        {
+            if (File.Exists(Application.persistentDataPath + "/PlayerData.data"))
+            {
+                File.Delete(Application.persistentDataPath + "/PlayerData.data");
+            }
+        }
     }
 }

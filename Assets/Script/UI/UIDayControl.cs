@@ -10,7 +10,6 @@ namespace Script.UI
         public int Day => _day;
         [SerializeField] private TextMeshProUGUI textUp;
         [SerializeField] private TextMeshProUGUI textPanel;
-        [SerializeField] private SerializationBinaryFormatter serialization;
         public static UIDayControl DayControl;
 
         private void Awake()

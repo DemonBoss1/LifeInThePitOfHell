@@ -18,7 +18,7 @@ namespace Script
         {
             HitPoints character = other.gameObject.GetComponent<HitPoints>();
             if(character != null){
-                character.changeHP(-damage);
+                character.ChangeHp(-damage);
             }
         }
     }
