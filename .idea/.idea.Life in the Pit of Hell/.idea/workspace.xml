@@ -23,7 +23,15 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Life in the Pit of Hell/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Life in the Pit of Hell/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Life in the Pit of Hell/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Life in the Pit of Hell/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Life in the Pit of Hell/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Life in the Pit of Hell/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprites/UI/Dead.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprites/UI/Dead.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Dead.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Dead.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/System/EnemyCounter.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/System/EnemyCounter.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/System/EnemyFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/System/EnemyFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/System/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/System/GameController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/System/SerializationBinaryFormatter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/System/SerializationBinaryFormatter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/System/Teleport.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/System/Teleport.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/UI/PauseMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/UI/PauseMenu.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +46,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/Script/Compat.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/UI/UIDayControl.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/UI/UIDayEvent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/System/EnemyCounter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/UI/UIMainMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/CharacterCharacteristics.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -48,21 +55,22 @@
         <option value="$PROJECT_DIR$/Assets/Script/CameraController.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/PlayerCombat.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/UI/UIMainMenu.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/UI/PauseMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Compat.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Damager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Teleport.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/UI/UIDayEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/UI/UIDayControl.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/System/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/HitPoints.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/CharacterCharacteristics.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/System/SerializationBinaryFormatter.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/System/EnemyCounter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/System/Teleport.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/System/EnemyFactory.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Dead.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/System/Teleport.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/UI/PauseMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/System/GameController.cs" />
       </list>
     </option>
   </component>
@@ -72,6 +80,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.3499268" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.3001464" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -102,10 +112,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="3532">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="3532" />
       <option name="selectedOptions">
         <set />
       </option>
@@ -126,6 +136,7 @@
       <workItem from="1688560828514" duration="4110000" />
       <workItem from="1688630325157" duration="6088000" />
       <workItem from="1688897438476" duration="1929000" />
+      <workItem from="1689066144370" duration="5796000" />
     </task>
     <servers />
   </component>
@@ -150,6 +161,38 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state width="1397" height="324" key="GridCell.Tab.0.bottom" timestamp="1689081496116">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="324" key="GridCell.Tab.0.bottom/0.0.1440.912@0.0.1440.912" timestamp="1689081496116" />
+    <state width="1397" height="324" key="GridCell.Tab.0.center" timestamp="1689081496116">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="324" key="GridCell.Tab.0.center/0.0.1440.912@0.0.1440.912" timestamp="1689081496116" />
+    <state width="1397" height="324" key="GridCell.Tab.0.left" timestamp="1689081496116">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="324" key="GridCell.Tab.0.left/0.0.1440.912@0.0.1440.912" timestamp="1689081496116" />
+    <state width="1397" height="324" key="GridCell.Tab.0.right" timestamp="1689081496116">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="324" key="GridCell.Tab.0.right/0.0.1440.912@0.0.1440.912" timestamp="1689081496116" />
+    <state width="1397" height="324" key="GridCell.Tab.1.bottom" timestamp="1689081507027">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="324" key="GridCell.Tab.1.bottom/0.0.1440.912@0.0.1440.912" timestamp="1689081507027" />
+    <state width="1397" height="324" key="GridCell.Tab.1.center" timestamp="1689081507027">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="324" key="GridCell.Tab.1.center/0.0.1440.912@0.0.1440.912" timestamp="1689081507027" />
+    <state width="1397" height="324" key="GridCell.Tab.1.left" timestamp="1689081507027">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="324" key="GridCell.Tab.1.left/0.0.1440.912@0.0.1440.912" timestamp="1689081507027" />
+    <state width="1397" height="324" key="GridCell.Tab.1.right" timestamp="1689081507027">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="324" key="GridCell.Tab.1.right/0.0.1440.912@0.0.1440.912" timestamp="1689081507027" />
     <state x="93" y="93" width="1255" height="727" key="VCS.FileHistoryDialog" timestamp="1688548293600">
       <screen x="0" y="0" width="1440" height="912" />
     </state>
@@ -158,5 +201,24 @@
       <screen x="0" y="0" width="1440" height="912" />
     </state>
     <state x="377" y="209" key="run.anything.popup/0.0.1440.912@0.0.1440.912" timestamp="1688474150392" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Script/System/GameController.cs</url>
+          <line>26</line>
+          <properties documentPath="C:\Unity\Life in the Pit of Hell\Assets\Script\System\GameController.cs" initialLine="26">
+            <startOffsets>
+              <option value="790" />
+            </startOffsets>
+            <endOffsets>
+              <option value="854" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

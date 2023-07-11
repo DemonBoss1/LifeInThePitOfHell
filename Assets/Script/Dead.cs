@@ -54,13 +54,13 @@ namespace Script
                         Meal meal = Instantiate(projectilePrefab, transform.position, Quaternion.identity).GetComponent<Meal>();
                         meal.value = Mathf.RoundToInt(GetComponent<CharacterCharacteristics>().MAXHitPoint / 3);
                         _characteristics.GETXp(GetComponent<CharacterCharacteristics>().Level * 5);
-                        GameController.gameController.enemies.Remove(gameObject);
                         Destroy(gameObject);
                         GameController.gameController.WallCheck();
-                        EnemyCounter.Count--;
+                        GameController.EnemyCounter--;
                     }
                     else
                     {
+                        GameController.EnemyCounter = 0;
                         SceneManager.LoadScene(0);
                     }
                     

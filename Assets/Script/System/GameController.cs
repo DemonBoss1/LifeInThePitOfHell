@@ -6,44 +6,56 @@ namespace Script.System
 {
     public class GameController : MonoBehaviour
     {
-        [SerializeField] GameObject projectilePrefab;
         [SerializeField] private Transform pos1, pos2, pos3;
         public static GameController gameController;
-        public List<GameObject> enemies = new List<GameObject>();
+        public static int EnemyCounter = 0;
         [SerializeField] private GameObject wall;
+        [SerializeField] private EnemyFactory _factory;
         private void Awake() {
             gameController = this;
         }
         private void Start()
         {
-            SpawnEnemy();
+            SpawnEnemies();
         }
-        public void SpawnEnemy()
+        public void SpawnEnemies()
         {
+            bool levelNull = UIDayControl.DayControl.Day / 3 == 1;
             if (UIDayControl.DayControl.Day % 3 == 1)
             {
-                EnemyFactory.CreateEnemy(projectilePrefab, pos1.position, CharacterCharacteristics.PlayerLevel);
-                EnemyFactory.CreateEnemy(projectilePrefab, pos2.position, CharacterCharacteristics.PlayerLevel - 1);
-                EnemyFactory.CreateEnemy(projectilePrefab, pos3.position, CharacterCharacteristics.PlayerLevel - 1);
+                SpawnEnemy(pos1.position, CharacterCharacteristics.PlayerLevel);
+                if (!levelNull)
+                {
+                    SpawnEnemy(pos2.position, CharacterCharacteristics.PlayerLevel - 1);
+                    SpawnEnemy(pos3.position, CharacterCharacteristics.PlayerLevel - 1);
+                }
             }
             else if (UIDayControl.DayControl.Day % 3 == 2)
             {
-                EnemyFactory.CreateEnemy(projectilePrefab, pos1.position, CharacterCharacteristics.PlayerLevel - 1);
-                EnemyFactory.CreateEnemy(projectilePrefab, pos2.position, CharacterCharacteristics.PlayerLevel);
-                EnemyFactory.CreateEnemy(projectilePrefab, pos3.position, CharacterCharacteristics.PlayerLevel);
+                if (!levelNull)
+                    SpawnEnemy(pos1.position, CharacterCharacteristics.PlayerLevel - 1);
+                SpawnEnemy(pos2.position, CharacterCharacteristics.PlayerLevel);
+                SpawnEnemy(pos3.position, CharacterCharacteristics.PlayerLevel);
             }
             else if (UIDayControl.DayControl.Day % 3 == 0)
             {
-                EnemyFactory.CreateEnemy(projectilePrefab, pos1.position, CharacterCharacteristics.PlayerLevel);
-                EnemyFactory.CreateEnemy(projectilePrefab, pos2.position, CharacterCharacteristics.PlayerLevel);
-                EnemyFactory.CreateEnemy(projectilePrefab, pos3.position, CharacterCharacteristics.PlayerLevel);
+                SpawnEnemy(pos1.position, CharacterCharacteristics.PlayerLevel);
+                SpawnEnemy(pos2.position, CharacterCharacteristics.PlayerLevel);
+                SpawnEnemy(pos3.position, CharacterCharacteristics.PlayerLevel);
             }
             WallCheck();
         }
 
+        public void SpawnEnemy(Vector2 pos, int level)
+        {
+            _factory.CreateEnemy(pos, level);
+            EnemyCounter++;
+        }
+
+
         public void WallCheck()
         {
-            if (enemies.Count == 0)
+            if (EnemyCounter == 0)
             {
                 wall.SetActive(false);
             }

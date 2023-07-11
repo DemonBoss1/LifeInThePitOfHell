@@ -20,8 +20,7 @@ namespace Script.System
             if (File.Exists(Application.persistentDataPath + "/PlayerData.data"))
             {
                 BinaryFormatter formatter = new BinaryFormatter();
-                using (FileStream fs = new FileStream(Application.persistentDataPath + "/PlayerData.data",
-                    FileMode.OpenOrCreate))
+                using (FileStream fs = new FileStream(Application.persistentDataPath + "/PlayerData.data", FileMode.OpenOrCreate))
                 {
                     Serialization newData = (Serialization) formatter.Deserialize(fs);
                     return newData;

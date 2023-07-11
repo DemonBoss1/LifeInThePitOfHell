@@ -21,7 +21,7 @@ namespace Script.System
                 UIDayEvent.DayEvent.PlayEvent();
                 _player.transform.position = destination.transform.position;
                 _characteristics.SaveData();
-                GameController.gameController.SpawnEnemy();
+                GameController.gameController.SpawnEnemies();
             }
         }
     }
