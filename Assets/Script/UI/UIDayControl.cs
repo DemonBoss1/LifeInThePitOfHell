@@ -1,3 +1,4 @@
+using System;
 using Script.System;
 using TMPro;
 using UnityEngine;
@@ -6,15 +7,21 @@ namespace Script.UI
 {
     public class UIDayControl : MonoBehaviour
     {
+        public static UIDayControl DayControl;
+        
         private int _day = 1;
         public int Day => _day;
+        
         [SerializeField] private TextMeshProUGUI textUp;
         [SerializeField] private TextMeshProUGUI textPanel;
-        public static UIDayControl DayControl;
 
         private void Awake()
         {
             DayControl = this;
+        }
+
+        private void Start()
+        {
             Serialization data = SerializationBinaryFormatter.LoadData();
             if (data != null)
             {
