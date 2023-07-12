@@ -34,10 +34,10 @@ namespace Script
         {
             ControllerCanvas = controllerCanvas;
             #if UNITY_STANDALONE_WIN
-                _platformController = new PlatformDesktop();
+                _platformController = PlatformDesktop.CreatePlatform();
                 controllerCanvas.SetActive(false);
             #elif UNITY_ANDROID
-                _platformController = new PlatformMobile(joystick);
+                _platformController = PlatformMobile.CreatePlatform();
                 controllerCanvas.SetActive(true);
             #endif
             _rotation = GetComponent<PlayerRotation>();
