@@ -37,7 +37,7 @@ namespace Script
                 _platformController = PlatformDesktop.CreatePlatform();
                 controllerCanvas.SetActive(false);
             #elif UNITY_ANDROID
-                _platformController = PlatformMobile.CreatePlatform();
+                _platformController = PlatformMobile.CreatePlatform(joystick);
                 controllerCanvas.SetActive(true);
             #endif
             _rotation = GetComponent<PlayerRotation>();

@@ -65,6 +65,9 @@
           <e p="EnemyController.cs" t="Include" />
           <e p="HitPoints.cs" t="Include" />
           <e p="Meal.cs" t="Include" />
+          <e p="PlatformController.cs" t="Include" />
+          <e p="PlatformDesktop.cs" t="Include" />
+          <e p="PlatformMobile.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />
           <e p="PlayerRotation.cs" t="Include" />
           <e p="System" t="Include">
