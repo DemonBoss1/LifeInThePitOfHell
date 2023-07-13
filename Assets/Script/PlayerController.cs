@@ -13,11 +13,7 @@ namespace Script
         
         [SerializeField] private AudioSource audioSource;
         [SerializeField] private AudioClip swingSword;
-        
-        [SerializeField] private Joystick joystick;
-        [SerializeField] private GameObject controllerCanvas;
-        public static GameObject ControllerCanvas;
-        
+
         private PlatformController _platformController;
         
         private PlayerRotation _rotation;
@@ -32,13 +28,10 @@ namespace Script
 
         void Start()
         {
-            ControllerCanvas = controllerCanvas;
             #if UNITY_STANDALONE_WIN
                 _platformController = PlatformDesktop.CreatePlatform();
-                controllerCanvas.SetActive(false);
             #elif UNITY_ANDROID
-                _platformController = PlatformMobile.CreatePlatform(joystick);
-                controllerCanvas.SetActive(true);
+                _platformController = PlatformMobile.CreatePlatform();
             #endif
             _rotation = GetComponent<PlayerRotation>();
         }
@@ -81,9 +74,6 @@ namespace Script
             //Debug.Log("Attack");
         }
 
-        public static void TurnOffControlls()
-        {
-            ControllerCanvas.SetActive(false);
-        }
+        
     }
 }

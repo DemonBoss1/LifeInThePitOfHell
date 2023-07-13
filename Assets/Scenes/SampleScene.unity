@@ -3840,25 +3840,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4170724696138364153, guid: 1b0c68f238a4a754f8481ad81374ad2f, type: 3}
-      propertyPath: eventPanel
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6903372700654685620, guid: 1b0c68f238a4a754f8481ad81374ad2f, type: 3}
-      propertyPath: textUp
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6903372700654685620, guid: 1b0c68f238a4a754f8481ad81374ad2f, type: 3}
-      propertyPath: textPanel
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6910396916810339663, guid: 1b0c68f238a4a754f8481ad81374ad2f, type: 3}
-      propertyPath: pauseMenuUI
-      value: 
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 6903372700654685620, guid: 1b0c68f238a4a754f8481ad81374ad2f, type: 3}
-    - {fileID: 4170724696138364153, guid: 1b0c68f238a4a754f8481ad81374ad2f, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

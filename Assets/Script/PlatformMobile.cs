@@ -1,3 +1,5 @@
+using Script.System;
+
 namespace Script
 {
     public class PlatformMobile : PlatformController
@@ -5,20 +7,21 @@ namespace Script
         private Joystick _joystick;
         private static PlatformController _platformController;
 
-        private PlatformMobile(Joystick joystick)
+        private PlatformMobile()
         {
             if (_platformController == null)
             {
-                _joystick = joystick;
+                ControllerCanvas.TurnOffControlls(true);
+                _joystick = ControllerCanvas.GetJoystick();
                 _platformController = this;
             }
         }
 
-        public static PlatformController CreatePlatform(Joystick joystick)
+        public static PlatformController CreatePlatform()
         {
             if (_platformController == null)
             {
-                _platformController = new PlatformMobile(joystick);
+                _platformController = new PlatformMobile();
             }
             return _platformController;
         }

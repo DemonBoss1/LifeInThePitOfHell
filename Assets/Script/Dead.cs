@@ -39,7 +39,7 @@ namespace Script
                 if (hp.IsPlayer)
                 {
                     deadUI.SetActive(true);
-                    PlayerController.TurnOffControlls();
+                    ControllerCanvas.TurnOffControlls(false);
                     SerializationBinaryFormatter.DeleteData();
                 }
             }

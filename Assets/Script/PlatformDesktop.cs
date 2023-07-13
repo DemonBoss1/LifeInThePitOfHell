@@ -1,3 +1,4 @@
+using Script.System;
 using UnityEngine;
 
 namespace Script
@@ -10,6 +11,7 @@ namespace Script
         {
             if (_platformController == null)
             {
+                ControllerCanvas.TurnOffControlls(false);
                 _platformController = new PlatformDesktop();
             }
             return _platformController;
