@@ -42,7 +42,7 @@ namespace Script
 
         public void Eat()
         {
-            if (_triggered && _character != null)
+            if (_triggered)
             {
                 _character.ChangeHp(value);
                 Destroy(gameObject);

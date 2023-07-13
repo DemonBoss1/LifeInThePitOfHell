@@ -20,7 +20,9 @@ namespace Script.System
         }
         public void SpawnEnemies()
         {
-            bool levelNull = UIDayControl.DayControl.Day / 3 == 1;
+            bool levelNull = UIDayControl.DayControl.Day / 3 == 0;
+            print(levelNull);
+
             if (UIDayControl.DayControl.Day % 3 == 1)
             {
                 SpawnEnemy(pos1.position, CharacterCharacteristics.PlayerLevel);
@@ -55,6 +57,7 @@ namespace Script.System
 
         public void WallCheck()
         {
+            print(EnemyCounter);
             if (EnemyCounter == 0)
             {
                 wall.SetActive(false);

@@ -55,12 +55,13 @@ namespace Script
                         meal.value = Mathf.RoundToInt(GetComponent<CharacterCharacteristics>().MAXHitPoint / 3);
                         _characteristics.GETXp(GetComponent<CharacterCharacteristics>().Level * 5);
                         Destroy(gameObject);
-                        GameController.gameController.WallCheck();
                         GameController.EnemyCounter--;
+                        GameController.gameController.WallCheck();
                     }
                     else
                     {
                         GameController.EnemyCounter = 0;
+                        PlatformController.PlatformControllerNull();
                         SceneManager.LoadScene(0);
                     }
                     

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Script;
 using Script.System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -40,6 +41,7 @@ public class PauseMenu : MonoBehaviour
     public void ExitGame()
     {
         GameController.EnemyCounter = 0;
+        PlatformController.PlatformControllerNull();
         SceneManager.LoadScene(0);
         Time.timeScale = 1f;
     }

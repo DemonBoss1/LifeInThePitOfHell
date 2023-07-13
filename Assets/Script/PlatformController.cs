@@ -1,3 +1,4 @@
+using Script.System;
 using UnityEngine;
 
 namespace Script
@@ -10,6 +11,14 @@ namespace Script
         public float Horizontal => _horizontal;
         public float Vertical => _vertical;
 
+        protected static PlatformController _platformController;
+
+
         public abstract void Movement();
+
+        public static void PlatformControllerNull()
+        {
+            _platformController = null;
+        }
     }
 }

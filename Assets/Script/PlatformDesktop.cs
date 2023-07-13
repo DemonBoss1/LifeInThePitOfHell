@@ -5,7 +5,6 @@ namespace Script
 {
     public class PlatformDesktop : PlatformController
     {
-        private static PlatformController _platformController;
         private PlatformDesktop(){}
         public static PlatformController CreatePlatform()
         {

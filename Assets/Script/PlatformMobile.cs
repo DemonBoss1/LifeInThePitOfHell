@@ -5,7 +5,6 @@ namespace Script
     public class PlatformMobile : PlatformController
     {
         private Joystick _joystick;
-        private static PlatformController _platformController;
 
         private PlatformMobile()
         {
