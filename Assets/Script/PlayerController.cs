@@ -22,7 +22,6 @@ namespace Script
         private float _timeHit = 0.5f;
         private float _hitTimer;
         
-        private Vector2 _direction;
 
         [SerializeField] private CharacterCharacteristics characteristics;
 
@@ -39,11 +38,7 @@ namespace Script
         void Update()
         {
             _platformController.Movement();
-            if (_platformController.Horizontal != 0 || _platformController.Vertical != 0)
-            {
-                _direction = new Vector2(_platformController.Horizontal, _platformController.Vertical).normalized;
-            }
-            _rotation.Rotate(_direction.x, _direction.y);
+           _rotation.UpdateLookDirection (_platformController.Horizontal, _platformController.Vertical);
 
             if (Input.GetAxis("Fire1") != 0)
             {
@@ -70,7 +65,7 @@ namespace Script
             _isHit = true;
             _hitTimer = _timeHit;
             audioSource.PlayOneShot(swingSword);
-            Compat.Attack(this, _direction, 0.5f, characteristics.Attack);
+            Compat.Attack(this, _rotation.Direction, 0.5f, characteristics.Attack);
             //Debug.Log("Attack");
         }
 

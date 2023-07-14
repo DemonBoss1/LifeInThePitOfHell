@@ -423,7 +423,7 @@ GameObject:
   - component: {fileID: 1175750205277582482}
   - component: {fileID: 2967170318648965326}
   - component: {fileID: 319900216340442067}
-  m_Layer: 12
+  m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -448,7 +448,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0.000018358, y: -0.000050783}
-  m_SizeDelta: {x: 60.573, y: 56.497}
+  m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2967170318648965326
 CanvasRenderer:
@@ -499,7 +499,7 @@ GameObject:
   - component: {fileID: 8859543472964245402}
   - component: {fileID: 4167668592562393833}
   - component: {fileID: 1422307574645628792}
-  m_Layer: 12
+  m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -524,7 +524,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.000020027, y: 0.0000038146973}
-  m_SizeDelta: {x: 71.3451, y: 66.5433}
+  m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4167668592562393833
 CanvasRenderer:
@@ -943,7 +943,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 64.2811, y: 64.2808}
+  m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7075919259961451973
 CanvasRenderer:
@@ -1011,7 +1011,7 @@ RectTransform:
   m_GameObject: {fileID: 7075919260247663040}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7075919259961451067}
@@ -1020,8 +1020,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 110, y: 91}
-  m_SizeDelta: {x: 157.2987, y: 157.2987}
+  m_AnchoredPosition: {x: 300, y: 300}
+  m_SizeDelta: {x: 500, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7075919260247663043
 CanvasRenderer:
@@ -1115,7 +1115,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 50}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 400, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4891786408354609920
@@ -1349,7 +1349,7 @@ GameObject:
   - component: {fileID: 2310587890779123941}
   - component: {fileID: 323231186495144580}
   - component: {fileID: 1655164457331812937}
-  m_Layer: 12
+  m_Layer: 5
   m_Name: UseBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1365,7 +1365,7 @@ RectTransform:
   m_GameObject: {fileID: 8109956208697518336}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1175750205277582482}
@@ -1374,8 +1374,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -182.7, y: 172.99}
-  m_SizeDelta: {x: 59.1269, y: 58.0475}
+  m_AnchoredPosition: {x: -600, y: 500}
+  m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7076910670280356683
 CanvasRenderer:
@@ -1476,8 +1476,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: Script.HitPoints, Assembly-CSharp
+        - m_Target: {fileID: 4196642658957416006, guid: 622df969d1007a0439cd724535cb3e01, type: 3}
+          m_TargetAssemblyTypeName: Script.Meal, Assembly-CSharp
           m_MethodName: Eat
           m_Mode: 1
           m_Arguments:
@@ -1501,7 +1501,7 @@ GameObject:
   - component: {fileID: 4007682907307118568}
   - component: {fileID: 2631869991124189401}
   - component: {fileID: 9116234201796113442}
-  m_Layer: 12
+  m_Layer: 5
   m_Name: AttackBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1517,7 +1517,7 @@ RectTransform:
   m_GameObject: {fileID: 8351563112088699572}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8859543472964245402}
@@ -1526,8 +1526,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -124.20001, y: 104}
-  m_SizeDelta: {x: 81.41492, y: 79.92871}
+  m_AnchoredPosition: {x: -350, y: 250}
+  m_SizeDelta: {x: 350, y: 350}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &602975668994939350
 CanvasRenderer:
@@ -1628,7 +1628,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 1504942299358823058}
           m_TargetAssemblyTypeName: Script.PlayerController, Assembly-CSharp
           m_MethodName: Attack
           m_Mode: 1
@@ -1649,13 +1649,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1781643076871075596}
-  m_Layer: 12
+  m_Layer: 5
   m_Name: ControllerCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1781643076871075596
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1665,7 +1665,7 @@ RectTransform:
   m_GameObject: {fileID: 8520493899579020265}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7075919260247663041}
@@ -1676,6 +1676,6 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.00012207031, y: -0.000061035156}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
