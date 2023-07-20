@@ -1,6 +1,7 @@
+using Joystick_Pack.Scripts.Base;
 using UnityEngine;
 
-namespace Script.System
+namespace System
 {
     public class ControllerCanvas : MonoBehaviour
     {

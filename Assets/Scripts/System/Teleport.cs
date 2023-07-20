@@ -1,7 +1,7 @@
-using Script.UI;
+using UI;
 using UnityEngine;
 
-namespace Script.System
+namespace System
 {
     public class Teleport : MonoBehaviour
     {

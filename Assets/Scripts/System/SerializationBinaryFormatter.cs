@@ -2,7 +2,7 @@ using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine;
 
-namespace Script.System
+namespace System
 {
     public class SerializationBinaryFormatter : MonoBehaviour
     {

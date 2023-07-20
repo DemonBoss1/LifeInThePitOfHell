@@ -1,7 +1,6 @@
-using System;
 using UnityEngine.Serialization;
 
-namespace Script.System
+namespace System
 {
     [Serializable]
     public class Serialization

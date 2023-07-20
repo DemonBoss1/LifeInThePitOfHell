@@ -1,7 +1,6 @@
-using System;
 using UnityEngine;
 
-namespace Script.System
+namespace System
 {
     public class EnemyFactory : MonoBehaviour
     {

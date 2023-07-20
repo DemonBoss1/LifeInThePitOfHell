@@ -1,9 +1,8 @@
 using System;
-using Script.System;
 using TMPro;
 using UnityEngine;
 
-namespace Script.UI
+namespace UI
 {
     public class UIDayControl : MonoBehaviour
     {
