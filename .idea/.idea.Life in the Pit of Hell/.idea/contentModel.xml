@@ -58,6 +58,7 @@
         <e p="Prefabs" t="Include" />
         <e p="Scenes" t="Include" />
         <e p="Scripts" t="Include">
+          <e p="AttackController.cs" t="Include" />
           <e p="CharacterCharacteristics.cs" t="Include" />
           <e p="Compat.cs" t="Include" />
           <e p="Damager.cs" t="Include" />
@@ -66,9 +67,6 @@
           <e p="HitPoints.cs" t="Include" />
           <e p="LookDirection.cs" t="Include" />
           <e p="Meal.cs" t="Include" />
-          <e p="PlatformController.cs" t="Include" />
-          <e p="PlatformDesktop.cs" t="Include" />
-          <e p="PlatformMobile.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />
           <e p="System" t="Include">
             <e p="CameraController.cs" t="Include" />
@@ -76,6 +74,10 @@
             <e p="EnemyFactory.cs" t="Include" />
             <e p="FrameRate.cs" t="Include" />
             <e p="GameController.cs" t="Include" />
+            <e p="GetAudioClip.cs" t="Include" />
+            <e p="PlatformController.cs" t="Include" />
+            <e p="PlatformDesktop.cs" t="Include" />
+            <e p="PlatformMobile.cs" t="Include" />
             <e p="Serialization.cs" t="Include" />
             <e p="SerializationBinaryFormatter.cs" t="Include" />
             <e p="Teleport.cs" t="Include" />
