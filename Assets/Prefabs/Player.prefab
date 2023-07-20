@@ -15,13 +15,13 @@ GameObject:
   - component: {fileID: 1504942299358823058}
   - component: {fileID: 5434133597460168555}
   - component: {fileID: 1811730968294191798}
-  - component: {fileID: 253970477486685191}
   - component: {fileID: 2888656748895917884}
   - component: {fileID: 1299345317353509484}
   - component: {fileID: 3946524784356875423}
   - component: {fileID: 6326986360673737374}
   - component: {fileID: 3274561430016230093}
   - component: {fileID: 8114339743606911486}
+  - component: {fileID: 269299337482369635}
   m_Layer: 12
   m_Name: Player
   m_TagString: Player
@@ -219,23 +219,9 @@ MonoBehaviour:
   currentHitPoints: 0
   timeInvincible: 1
   isPlayer: 1
-  triggered: 0
-  eat: 0
   characteristics: {fileID: 6326986360673737374}
-  hpCount: {fileID: 0}
+  hpCount: {fileID: 7058966524022914092}
   blowBody: {fileID: 8300000, guid: f4eb4c84c9906514cb73117f4bc302a2, type: 3}
---- !u!114 &253970477486685191
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1113835972719106298}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 553d8d3c07e1dcb43b714edcdfffa8b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!82 &2888656748895917884
 AudioSource:
   m_ObjectHideFlags: 0
@@ -410,6 +396,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 4675509577358888889}
+--- !u!114 &269299337482369635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1113835972719106298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dda6fa671d8d0e446bd7bddd543ae7ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1262483950416008326
 GameObject:
   m_ObjectHideFlags: 0
@@ -745,6 +743,7 @@ RectTransform:
   m_Children:
   - {fileID: 7081542026347616778}
   - {fileID: 4431482208119336440}
+  - {fileID: 1743931177825595437}
   m_Father: {fileID: 2033740408551282880}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1316,6 +1315,86 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &7860692144180944773
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1743931177825595437}
+  - component: {fileID: 4937820992329298661}
+  - component: {fileID: 7058966524022914092}
+  m_Layer: 5
+  m_Name: HPCount
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1743931177825595437
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7860692144180944773}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 24592920223135561}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -84.2964, y: 59.169}
+  m_SizeDelta: {x: 160, y: 120}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &4937820992329298661
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7860692144180944773}
+  m_CullTransparentMesh: 1
+--- !u!114 &7058966524022914092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7860692144180944773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 50
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 72
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 5/5
 --- !u!1 &8089452473159240647
 GameObject:
   m_ObjectHideFlags: 0
@@ -1576,8 +1655,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 4196642658957416006, guid: 622df969d1007a0439cd724535cb3e01, type: 3}
-          m_TargetAssemblyTypeName: Script.Meal, Assembly-CSharp
+        - m_Target: {fileID: 269299337482369635}
+          m_TargetAssemblyTypeName: Heal, Assembly-CSharp
           m_MethodName: Eat
           m_Mode: 1
           m_Arguments:

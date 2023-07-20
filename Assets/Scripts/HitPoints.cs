@@ -8,20 +8,19 @@ public class HitPoints : MonoBehaviour
 {
     public float Hp => currentHitPoints;
     [SerializeField] private float currentHitPoints;
+    
     [SerializeField] private float timeInvincible = 2.0f;
     private bool _isInvincible;
     private float _invincibleTimer;
+    
+    public bool IsPlayer => isPlayer;
     [SerializeField] private bool isPlayer;
-    [HideInInspector] public bool triggered;
-    [HideInInspector] public bool eat;
 
     [SerializeField] private CharacterCharacteristics characteristics;
+    
     [SerializeField] private Text hpCount;
-
-    public bool IsPlayer => isPlayer;
-
-    public AudioClip blowBody;
     private UIHealthBar _uiHealthBar;
+
     private AudioSource _audioPlayer;
 
     void Start()
@@ -37,16 +36,12 @@ public class HitPoints : MonoBehaviour
                 _uiHealthBar.SetValue(currentHitPoints / data.maxHitPoint);
             }
             else
-            {
                 currentHitPoints = characteristics.MAXHitPoint;
-            }
-
             characteristics.currentHp = currentHitPoints;
+            SetValue(currentHitPoints / characteristics.MAXHitPoint);
         }
         else
-        {
             currentHitPoints = characteristics.MAXHitPoint;
-        }
     }
 
     void Update()
@@ -69,23 +64,17 @@ public class HitPoints : MonoBehaviour
         }
         currentHitPoints = Mathf.Clamp(currentHitPoints + value, 0, characteristics.MAXHitPoint);
         characteristics.currentHp = currentHitPoints;
-        if (isPlayer) _uiHealthBar.SetValue(currentHitPoints / characteristics.MAXHitPoint);
-        else SetValue(currentHitPoints / characteristics.MAXHitPoint);
+        SetValue(currentHitPoints / characteristics.MAXHitPoint);
     }
 
     void PlayAudio()
     {
         if (_audioPlayer != null)
         {
-            _audioPlayer.PlayOneShot(blowBody);
+            _audioPlayer.PlayOneShot(GetAudioClip.Clip.blowBody);
         }
     }
-
-    public void Eat()
-    {
-        eat = true;
-    }
-    public void SetValue(float value){
+    private void SetValue(float value){
         _uiHealthBar.SetValue(currentHitPoints / characteristics.MAXHitPoint);
         hpCount.text = Mathf.RoundToInt(currentHitPoints) + "/" +  Mathf.RoundToInt(characteristics.MAXHitPoint);
     }

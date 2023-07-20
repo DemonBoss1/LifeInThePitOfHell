@@ -20,7 +20,6 @@ namespace System
         public void SpawnEnemies()
         {
             bool levelNull = UIDayControl.DayControl.Day / 3 == 0;
-            print(levelNull);
 
             if (UIDayControl.DayControl.Day % 3 == 1)
             {
@@ -56,7 +55,6 @@ namespace System
 
         public void WallCheck()
         {
-            print(EnemyCounter);
             if (EnemyCounter == 0)
             {
                 wall.SetActive(false);
