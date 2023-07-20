@@ -7,6 +7,9 @@ public class Dead : MonoBehaviour
 {
     private bool _isPlayAudio;
     private float _playAudioTimer;
+
+    private bool _isDead;
+    public bool IsDead => _isDead;
         
     [SerializeField] private GameObject deadUI;
     [SerializeField] private GameObject projectilePrefab;
@@ -25,12 +28,14 @@ public class Dead : MonoBehaviour
     private void Awake() {
         _player = GameObject.FindGameObjectWithTag("Player");
         _characteristics = _player.GetComponent<CharacterCharacteristics>();
-        _hp = _player.GetComponent<HitPoints>();
-        _playerController = _player.GetComponent<PlayerController>();
+        _hp = GetComponent<HitPoints>();
+        _playerController = GetComponent<PlayerController>();
     }
     void Update()
     {
-        if((_hp.Hp <= 0)&&(!_isPlayAudio)){
+        if((_hp.Hp <= 0)&&(!_isPlayAudio))
+        {
+            _isDead = true;
             PlayAudio();
             _isPlayAudio = true;
             _playAudioTimer = 1.0f;
@@ -41,7 +46,6 @@ public class Dead : MonoBehaviour
                 SerializationBinaryFormatter.DeleteData();
             }
         }
-
         if (_isPlayAudio)
         {
             _playAudioTimer -= Time.deltaTime;
