@@ -21,9 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="4c27d656-66fa-4961-aa8d-8b2259de6089" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Life in the Pit of Hell/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Life in the Pit of Hell/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dead.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dead.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/HitPoints.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HitPoints.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/System/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/System/GameController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/System/GetAudioClip.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/System/GetAudioClip.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,6 +82,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/System/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/System/GetAudioClip.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HitPoints.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Dead.cs" />
       </list>
     </option>
   </component>
@@ -153,7 +153,7 @@
       <workItem from="1689232888831" duration="2690000" />
       <workItem from="1689237291034" duration="11163000" />
       <workItem from="1689326078271" duration="2740000" />
-      <workItem from="1689836923405" duration="15614000" />
+      <workItem from="1689836923405" duration="17452000" />
     </task>
     <servers />
   </component>

@@ -5,19 +5,17 @@ using UnityEngine.Serialization;
 
 public class Dead : MonoBehaviour
 {
-    [FormerlySerializedAs("HP")] [SerializeField] HitPoints hp;
-    [SerializeField] GameObject projectilePrefab;
-
-    [SerializeField] private AudioClip bodyCut;
-
     private bool _isPlayAudio;
     private float _playAudioTimer;
         
-    [FormerlySerializedAs("DeadUI")] [SerializeField] private GameObject deadUI;
+    [SerializeField] private GameObject deadUI;
+    [SerializeField] private GameObject projectilePrefab;
 
     private GameObject _player;
     private CharacterCharacteristics _characteristics;
     private AudioSource _audioPlayer;
+    private HitPoints _hp;
+    private PlayerController _playerController;
 
     private void Start()
     {
@@ -27,14 +25,16 @@ public class Dead : MonoBehaviour
     private void Awake() {
         _player = GameObject.FindGameObjectWithTag("Player");
         _characteristics = _player.GetComponent<CharacterCharacteristics>();
+        _hp = _player.GetComponent<HitPoints>();
+        _playerController = _player.GetComponent<PlayerController>();
     }
     void Update()
     {
-        if((hp.Hp <= 0)&&(!_isPlayAudio)){
+        if((_hp.Hp <= 0)&&(!_isPlayAudio)){
             PlayAudio();
             _isPlayAudio = true;
             _playAudioTimer = 1.0f;
-            if (hp.IsPlayer)
+            if (_playerController != null) 
             {
                 deadUI.SetActive(true);
                 ControllerCanvas.TurnOffControlls(false);
@@ -47,7 +47,7 @@ public class Dead : MonoBehaviour
             _playAudioTimer -= Time.deltaTime;
             if (_playAudioTimer < 0)
             {
-                if (!hp.IsPlayer)
+                if (_playerController == null) 
                 {
                     Meal meal = Instantiate(projectilePrefab, transform.position, Quaternion.identity).GetComponent<Meal>();
                     meal.value = Mathf.RoundToInt(GetComponent<CharacterCharacteristics>().MAXHitPoint / 3);
@@ -70,7 +70,7 @@ public class Dead : MonoBehaviour
     {
         if (_audioPlayer != null)
         {
-            _audioPlayer.PlayOneShot(bodyCut);
+            _audioPlayer.PlayOneShot(GetAudioClip.Clip.bodyCut);
         }
     }
 }

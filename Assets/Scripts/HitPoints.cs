@@ -12,9 +12,6 @@ public class HitPoints : MonoBehaviour
     [SerializeField] private float timeInvincible = 2.0f;
     private bool _isInvincible;
     private float _invincibleTimer;
-    
-    public bool IsPlayer => isPlayer;
-    [SerializeField] private bool isPlayer;
 
     [SerializeField] private CharacterCharacteristics characteristics;
     
@@ -22,12 +19,14 @@ public class HitPoints : MonoBehaviour
     private UIHealthBar _uiHealthBar;
 
     private AudioSource _audioPlayer;
+    private PlayerController _playerController;
 
     void Start()
     {
         _audioPlayer = GetComponent<AudioSource>();
         _uiHealthBar = GetComponent<UIHealthBar>();
-        if (isPlayer)
+        _playerController = GetComponent<PlayerController>();
+        if (_playerController != null) 
         {
             Serialization data = SerializationBinaryFormatter.LoadData();
             if (data != null)

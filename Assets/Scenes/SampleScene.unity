@@ -5057,6 +5057,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   swingSword: {fileID: 8300000, guid: 6993f5fd8c6418d4bb449d852e660f13, type: 3}
   blowBody: {fileID: 8300000, guid: f4eb4c84c9906514cb73117f4bc302a2, type: 3}
+  bodyCut: {fileID: 8300000, guid: 9135e80d10291f7429806c6473b7be8e, type: 3}
 --- !u!114 &1334605427
 MonoBehaviour:
   m_ObjectHideFlags: 0

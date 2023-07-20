@@ -8,6 +8,7 @@ namespace System
         
         public AudioClip swingSword;
         public AudioClip blowBody;
+        public AudioClip bodyCut;
 
         private void Awake()
         {
