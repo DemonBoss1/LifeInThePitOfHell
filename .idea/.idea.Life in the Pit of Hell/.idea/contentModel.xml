@@ -64,6 +64,7 @@
           <e p="Damager.cs" t="Include" />
           <e p="Dead.cs" t="Include" />
           <e p="EnemyController.cs" t="Include" />
+          <e p="Heal.cs" t="Include" />
           <e p="HitPoints.cs" t="Include" />
           <e p="LookDirection.cs" t="Include" />
           <e p="Meal.cs" t="Include" />

@@ -22,14 +22,7 @@
     <list default="true" id="4c27d656-66fa-4961-aa8d-8b2259de6089" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Life in the Pit of Hell/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Life in the Pit of Hell/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Life in the Pit of Hell/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Life in the Pit of Hell/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Compat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Compat.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlatformController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlatformController.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlatformDesktop.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlatformDesktop.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlatformMobile.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlatformMobile.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Meal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meal.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +34,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/System/PlatformController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Heal.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/605BF8B3-1FCB-444B-8517-6DA963870AA7/2b/70f128df/NullReferenceException.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/System/GetAudioClip.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AttackController.cs" root0="FORCE_HIGHLIGHTING" />
@@ -83,6 +77,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/System/PlatformMobile.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/System/PlatformDesktop.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Heal.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Meal.cs" />
       </list>
     </option>
   </component>
@@ -153,7 +149,7 @@
       <workItem from="1689232888831" duration="2690000" />
       <workItem from="1689237291034" duration="11163000" />
       <workItem from="1689326078271" duration="2740000" />
-      <workItem from="1689836923405" duration="7010000" />
+      <workItem from="1689836923405" duration="12528000" />
     </task>
     <servers />
   </component>
