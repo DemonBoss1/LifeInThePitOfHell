@@ -5,25 +5,25 @@ using UnityEngine.Serialization;
 
 public class CharacterCharacteristics : MonoBehaviour
 {
-    private float attack = 2;
-    public float Attack => attack;
+    private float _attack = 2;
+    public float Attack => _attack;
 
-    private float protection = 1;
-    public float Protection => protection;
+    private float _protection = 1;
+    public float Protection => _protection;
 
-    private float dexterity = 1;
-    public float Dexterity => dexterity;
+    private float _dexterity = 1;
+    public float Dexterity => _dexterity;
 
-    private float maxHitPoint = 5;
-    public float MAXHitPoint => maxHitPoint;
+    private float _maxHitPoint = 5;
+    public float MAXHitPoint => _maxHitPoint;
 
     private int _requiredXp = 10;
     private int _currentXp = 0; 
     
-    private int level = 1;
-    public int Level => level;
-    
-    public float currentHp;
+    private int _level = 1;
+    public int Level => _level;
+
+    private HitPoints _hitPoints;
     private EnemyController _enemyController;
 
     private UpdateLevel _levelTextBar;
@@ -35,32 +35,34 @@ public class CharacterCharacteristics : MonoBehaviour
             Serialization data = SerializationBinaryFormatter.LoadData();
             if (data != null)
             {
-                attack = data.attack;
-                protection = data.protection;
-                dexterity = data.dexterity;
-                maxHitPoint = data.maxHitPoint;
+                _attack = data.attack;
+                _protection = data.protection;
+                _dexterity = data.dexterity;
+                _maxHitPoint = data.maxHitPoint;
                 _currentXp = data.currentXp;
                 _requiredXp = data.requiredXp;
-                level = data.level;
+                _level = data.level;
             }
         }
         _levelTextBar = GetComponent<UpdateLevel>();
-        _levelTextBar.LevelUp(level);
+        _hitPoints = GetComponent<HitPoints>();
+        _levelTextBar.LevelUp(_level);
     }
 
     void LevelUp()
     {
-        attack = Mathf.Round(attack * 1.2f) + 1;
-        protection = Mathf.Round(protection * 1.1f) + 1;
-        dexterity = dexterity * 1.01f;
-        maxHitPoint = Mathf.Round(maxHitPoint * 1.2f) + 1;
-        level += 1;
+        _attack = Mathf.Round(_attack * 1.2f) + 1;
+        _protection = Mathf.Round(_protection * 1.1f) + 1;
+        _dexterity = _dexterity * 1.01f;
+        _maxHitPoint = Mathf.Round(_maxHitPoint * 1.2f) + 1;
+        _level += 1;
         _requiredXp *= 2;
         if (_enemyController == null) 
         {
             SaveData();
         }
-        _levelTextBar.LevelUp(level);
+        _levelTextBar.LevelUp(_level);
+        _hitPoints.SetValue();
     }
 
     public void GETXp(int value)
@@ -77,10 +79,10 @@ public class CharacterCharacteristics : MonoBehaviour
     {
         if (level > 1)
         {
-            attack = 2;
-            protection = 1;
-            dexterity = 1;
-            maxHitPoint = 5;
+            _attack = 2;
+            _protection = 1;
+            _dexterity = 1;
+            _maxHitPoint = 5;
             _requiredXp = 10;
             for (int i = 1; i < level; i++) LevelUp();
         }
@@ -88,8 +90,8 @@ public class CharacterCharacteristics : MonoBehaviour
 
     public void SaveData()
     {
-        Serialization data = new Serialization(attack, protection, dexterity, maxHitPoint, _currentXp, 
-            _requiredXp,level, UIDayControl.DayControl.Day, currentHp);
+        Serialization data = new Serialization(_attack, _protection, _dexterity, _maxHitPoint, _currentXp, 
+            _requiredXp,_level, UIDayControl.DayControl.Day, _hitPoints.Hp);
         SerializationBinaryFormatter.SaveData(data);
     }
 }

@@ -36,8 +36,7 @@ public class HitPoints : MonoBehaviour
             }
             else
                 currentHitPoints = characteristics.MAXHitPoint;
-            characteristics.currentHp = currentHitPoints;
-            SetValue(currentHitPoints / characteristics.MAXHitPoint);
+            SetValue();
         }
         else
             currentHitPoints = characteristics.MAXHitPoint;
@@ -62,8 +61,7 @@ public class HitPoints : MonoBehaviour
                 
         }
         currentHitPoints = Mathf.Clamp(currentHitPoints + value, 0, characteristics.MAXHitPoint);
-        characteristics.currentHp = currentHitPoints;
-        SetValue(currentHitPoints / characteristics.MAXHitPoint);
+        SetValue();
     }
 
     void PlayAudio()
@@ -73,7 +71,7 @@ public class HitPoints : MonoBehaviour
             _audioPlayer.PlayOneShot(GetAudioClip.Clip.blowBody);
         }
     }
-    private void SetValue(float value){
+    public void SetValue(){
         _uiHealthBar.SetValue(currentHitPoints / characteristics.MAXHitPoint);
         hpCount.text = Mathf.RoundToInt(currentHitPoints) + "/" +  Mathf.RoundToInt(characteristics.MAXHitPoint);
     }
