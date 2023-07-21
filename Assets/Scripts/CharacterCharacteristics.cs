@@ -25,7 +25,6 @@ public class CharacterCharacteristics : MonoBehaviour
     
     public float currentHp;
     private EnemyController _enemyController;
-    public static int PlayerLevel;
 
     private UpdateLevel _levelTextBar;
     private void Awake()
@@ -44,7 +43,6 @@ public class CharacterCharacteristics : MonoBehaviour
                 _requiredXp = data.requiredXp;
                 level = data.level;
             }
-            PlayerLevel = level;
         }
         _levelTextBar = GetComponent<UpdateLevel>();
         _levelTextBar.LevelUp(level);
@@ -61,7 +59,6 @@ public class CharacterCharacteristics : MonoBehaviour
         if (_enemyController == null) 
         {
             SaveData();
-            PlayerLevel = level;
         }
         _levelTextBar.LevelUp(level);
     }

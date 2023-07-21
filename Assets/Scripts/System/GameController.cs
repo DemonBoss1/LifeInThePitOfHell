@@ -23,25 +23,25 @@ namespace System
 
             if (UIDayControl.DayControl.Day % 3 == 1)
             {
-                SpawnEnemy(pos1.position, CharacterCharacteristics.PlayerLevel);
+                SpawnEnemy(pos1.position, UIDayControl.DayControl.Day / 3 + 1);
                 if (!levelNull)
                 {
-                    SpawnEnemy(pos2.position, CharacterCharacteristics.PlayerLevel - 1);
-                    SpawnEnemy(pos3.position, CharacterCharacteristics.PlayerLevel - 1);
+                    SpawnEnemy(pos2.position, UIDayControl.DayControl.Day / 3);
+                    SpawnEnemy(pos3.position, UIDayControl.DayControl.Day / 3);
                 }
             }
             else if (UIDayControl.DayControl.Day % 3 == 2)
             {
                 if (!levelNull)
-                    SpawnEnemy(pos1.position, CharacterCharacteristics.PlayerLevel - 1);
-                SpawnEnemy(pos2.position, CharacterCharacteristics.PlayerLevel);
-                SpawnEnemy(pos3.position, CharacterCharacteristics.PlayerLevel);
+                    SpawnEnemy(pos1.position, UIDayControl.DayControl.Day / 3);
+                SpawnEnemy(pos2.position, UIDayControl.DayControl.Day / 3 + 1);
+                SpawnEnemy(pos3.position, UIDayControl.DayControl.Day / 3 + 1);
             }
             else if (UIDayControl.DayControl.Day % 3 == 0)
             {
-                SpawnEnemy(pos1.position, CharacterCharacteristics.PlayerLevel);
-                SpawnEnemy(pos2.position, CharacterCharacteristics.PlayerLevel);
-                SpawnEnemy(pos3.position, CharacterCharacteristics.PlayerLevel);
+                SpawnEnemy(pos1.position, UIDayControl.DayControl.Day / 3);
+                SpawnEnemy(pos2.position, UIDayControl.DayControl.Day / 3);
+                SpawnEnemy(pos3.position, UIDayControl.DayControl.Day / 3);
             }
             WallCheck();
         }
