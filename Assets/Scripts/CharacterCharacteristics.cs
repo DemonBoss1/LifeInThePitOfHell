@@ -5,34 +5,33 @@ using UnityEngine.Serialization;
 
 public class CharacterCharacteristics : MonoBehaviour
 {
-    [FormerlySerializedAs("_attack")] [SerializeField] private float attack = 2;
-
+    private float attack = 2;
     public float Attack => attack;
 
-    [FormerlySerializedAs("_protection")] [SerializeField]private float protection = 1;
-
+    private float protection = 1;
     public float Protection => protection;
 
-    [FormerlySerializedAs("_dexterity")] [SerializeField]private float dexterity = 1;
-
+    private float dexterity = 1;
     public float Dexterity => dexterity;
 
-    [FormerlySerializedAs("_maxHitPoint")] [SerializeField]private float maxHitPoint = 5;
-
+    private float maxHitPoint = 5;
     public float MAXHitPoint => maxHitPoint;
 
     private int _requiredXp = 10;
-    private int _currentXp = 0;
-    [FormerlySerializedAs("_level")] [SerializeField] private int level = 1;
+    private int _currentXp = 0; 
+    
+    private int level = 1;
     public int Level => level;
+    
     public float currentHp;
-    [SerializeField] private bool mob;
+    private EnemyController _enemyController;
     public static int PlayerLevel;
 
-    private UpdateLevel _levelUp;
+    private UpdateLevel _levelTextBar;
     private void Awake()
     {
-        if (!mob)
+        _enemyController = GetComponent<EnemyController>();
+        if (_enemyController == null) 
         {
             Serialization data = SerializationBinaryFormatter.LoadData();
             if (data != null)
@@ -47,8 +46,8 @@ public class CharacterCharacteristics : MonoBehaviour
             }
             PlayerLevel = level;
         }
-        _levelUp = GetComponent<UpdateLevel>();
-        _levelUp.LevelUp(level);
+        _levelTextBar = GetComponent<UpdateLevel>();
+        _levelTextBar.LevelUp(level);
     }
 
     void LevelUp()
@@ -59,12 +58,12 @@ public class CharacterCharacteristics : MonoBehaviour
         maxHitPoint = Mathf.Round(maxHitPoint * 1.2f) + 1;
         level += 1;
         _requiredXp *= 2;
-        if (!mob)
+        if (_enemyController == null) 
         {
             SaveData();
             PlayerLevel = level;
         }
-        _levelUp.LevelUp(level);
+        _levelTextBar.LevelUp(level);
     }
 
     public void GETXp(int value)
