@@ -60,9 +60,9 @@ public class CharacterCharacteristics : MonoBehaviour
         if (_enemyController == null) 
         {
             SaveData();
+            _hitPoints.SetValue();
         }
         _levelTextBar.LevelUp(_level);
-        _hitPoints.SetValue();
     }
 
     public void GETXp(int value)
