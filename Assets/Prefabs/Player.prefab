@@ -130,10 +130,10 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.003810048, y: 0.859917}
+  m_Offset: {x: 0.003810048, y: 0.008031845}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.5, y: 0.25}
     oldSize: {x: 3.4, y: 2.8006837}
     newSize: {x: 3.4, y: 2.8006837}
     adaptiveTilingThreshold: 0.5
@@ -141,7 +141,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.1906426, y: 0.813609}
+  m_Size: {x: 1.1906426, y: 0.549387}
   m_EdgeRadius: 0
 --- !u!50 &5128173634609773943
 Rigidbody2D:
@@ -218,10 +218,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHitPoints: 0
   timeInvincible: 1
-  isPlayer: 1
   characteristics: {fileID: 6326986360673737374}
   hpCount: {fileID: 7058966524022914092}
-  blowBody: {fileID: 8300000, guid: f4eb4c84c9906514cb73117f4bc302a2, type: 3}
 --- !u!82 &2888656748895917884
 AudioSource:
   m_ObjectHideFlags: 0
@@ -330,10 +328,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fee9661a125ace4fb2fae9f30b7f72e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: {fileID: 1811730968294191798}
-  projectilePrefab: {fileID: 4078511792662054654, guid: 622df969d1007a0439cd724535cb3e01, type: 3}
-  bodyCut: {fileID: 8300000, guid: 9135e80d10291f7429806c6473b7be8e, type: 3}
   deadUI: {fileID: 3738441628401237217}
+  projectilePrefab: {fileID: 4078511792662054654, guid: 622df969d1007a0439cd724535cb3e01, type: 3}
 --- !u!114 &3946524784356875423
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -363,13 +359,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e35b34ee77c1ca4084d8085650dc8e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attack: 2
-  protection: 1
-  dexterity: 1
-  maxHitPoint: 5
-  level: 1
-  currentHp: 0
-  mob: 0
 --- !u!114 &3274561430016230093
 MonoBehaviour:
   m_ObjectHideFlags: 0

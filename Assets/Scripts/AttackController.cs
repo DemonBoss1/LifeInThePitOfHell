@@ -38,7 +38,7 @@ public class AttackController
         _isHit = true;
         _hitTimer = _timeHit;
         audioSource.PlayOneShot(GetAudioClip.Clip.swingSword);
-        Compat.Attack(_character, _lookDirection.Direction, 0.5f, _characteristics.Attack);
+        Compat.Attack(_character, _lookDirection.Direction, 1f, _characteristics.Attack);
         //Debug.Log("Attack");
     }
 }
