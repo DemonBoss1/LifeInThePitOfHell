@@ -17,7 +17,7 @@ public class CharacterCharacteristics : MonoBehaviour
     private float _maxHitPoint = 5;
     public float MAXHitPoint => _maxHitPoint;
 
-    private int _requiredXp = 10;
+    private int _requiredXp = 15;
     private int _currentXp = 0; 
     
     private int _level = 1;
@@ -56,7 +56,7 @@ public class CharacterCharacteristics : MonoBehaviour
         _dexterity = _dexterity * 1.01f;
         _maxHitPoint = Mathf.Round(_maxHitPoint * 1.2f) + 1;
         _level += 1;
-        _requiredXp *= 2;
+        _requiredXp *= 3;
         if (_enemyController == null) 
         {
             SaveData();
@@ -83,7 +83,7 @@ public class CharacterCharacteristics : MonoBehaviour
             _protection = 1;
             _dexterity = 1;
             _maxHitPoint = 5;
-            _requiredXp = 10;
+            _requiredXp = 15;
             for (int i = 1; i < level; i++) LevelUp();
         }
     }
