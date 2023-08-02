@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Audio;
 using UnityEngine;
 
 public class AttackController
@@ -37,7 +38,7 @@ public class AttackController
             return;
         _isHit = true;
         _hitTimer = _timeHit;
-        audioSource.PlayOneShot(GetAudioClip.Clip.swingSword);
+        AudioManager.PlayAudio("Swing Sword",audioSource);
         Compat.Attack(_character, _lookDirection.Direction, 1f, _characteristics.Attack);
         //Debug.Log("Attack");
     }

@@ -20,7 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c27d656-66fa-4961-aa8d-8b2259de6089" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Life in the Pit of Hell/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Life in the Pit of Hell/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Life in the Pit of Hell/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Life in the Pit of Hell/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AttackController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AttackController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dead.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dead.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HitPoints.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HitPoints.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/System/GetAudioClip.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/System/GetAudioClip.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/VolumeInit.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/VolumeInit.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,10 +42,9 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/605BF8B3-1FCB-444B-8517-6DA963870AA7/2b/70f128df/NullReferenceException.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C7B1C0E4-00A6-4326-84F6-1DF6FFB461D6/6b/c2f444a3/EventDispatcher.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/System/GetAudioClip.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Audio/Sound.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AttackController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/UIBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/VolumeInit.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/System/PlatformController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Heal.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -79,14 +87,18 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/System/GetAudioClip.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemyController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Damager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Dead.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/System/GameController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/HitPoints.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AttackController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Compat.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CharacterCharacteristics.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIMainMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/UISettings.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/VolumeInit.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Audio/GetAudioClip.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AttackController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Audio/Sound.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Audio/AudioManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Dead.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HitPoints.cs" />
       </list>
     </option>
   </component>
@@ -161,7 +173,7 @@
       <workItem from="1689926234550" duration="10150000" />
       <workItem from="1690097544275" duration="897000" />
       <workItem from="1690879002782" duration="4904000" />
-      <workItem from="1690964206533" duration="1670000" />
+      <workItem from="1690964206533" duration="4419000" />
     </task>
     <servers />
   </component>
@@ -290,50 +302,5 @@
       <screen x="0" y="0" width="1440" height="912" />
     </state>
     <state x="377" y="209" key="run.anything.popup/0.0.1440.912@0.0.1440.912" timestamp="1688474150392" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Dead.cs</url>
-          <line>37</line>
-          <properties documentPath="C:\Unity\Life in the Pit of Hell\Assets\Scripts\Dead.cs" initialLine="37">
-            <startOffsets>
-              <option value="1037" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1052" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/HitPoints.cs</url>
-          <line>63</line>
-          <properties documentPath="C:\Unity\Life in the Pit of Hell\Assets\Scripts\HitPoints.cs" initialLine="63">
-            <startOffsets>
-              <option value="1983" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1994" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/HitPoints.cs</url>
-          <line>38</line>
-          <properties documentPath="C:\Unity\Life in the Pit of Hell\Assets\Scripts\HitPoints.cs" initialLine="38">
-            <startOffsets>
-              <option value="1202" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1213" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

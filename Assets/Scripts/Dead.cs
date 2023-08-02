@@ -1,4 +1,5 @@
 using System;
+using Audio;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
@@ -74,7 +75,7 @@ public class Dead : MonoBehaviour
     {
         if (_audioPlayer != null)
         {
-            _audioPlayer.PlayOneShot(GetAudioClip.Clip.bodyCut);
+            AudioManager.PlayAudio("Body Cut", _audioPlayer);
         }
     }
 }

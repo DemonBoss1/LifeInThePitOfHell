@@ -5752,9 +5752,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ae69086349c1354192feedd78a5c75f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  swingSword: {fileID: 8300000, guid: 6993f5fd8c6418d4bb449d852e660f13, type: 3}
-  blowBody: {fileID: 8300000, guid: f4eb4c84c9906514cb73117f4bc302a2, type: 3}
-  bodyCut: {fileID: 8300000, guid: 9135e80d10291f7429806c6473b7be8e, type: 3}
+  sounds:
+  - name: Swing Sword
+    clip: {fileID: 8300000, guid: 6993f5fd8c6418d4bb449d852e660f13, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+  - name: Blow Body
+    clip: {fileID: 8300000, guid: f4eb4c84c9906514cb73117f4bc302a2, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+  - name: Body Cut
+    clip: {fileID: 8300000, guid: 9135e80d10291f7429806c6473b7be8e, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
 --- !u!114 &1334605427
 MonoBehaviour:
   m_ObjectHideFlags: 0

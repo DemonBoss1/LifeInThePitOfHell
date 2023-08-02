@@ -1,4 +1,5 @@
 using System;
+using Audio;
 using UI;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -68,7 +69,7 @@ public class HitPoints : MonoBehaviour
     {
         if (_audioPlayer != null)
         {
-            _audioPlayer.PlayOneShot(GetAudioClip.Clip.blowBody);
+            AudioManager.PlayAudio("Blow Body", _audioPlayer);
         }
     }
     public void SetValue(){
