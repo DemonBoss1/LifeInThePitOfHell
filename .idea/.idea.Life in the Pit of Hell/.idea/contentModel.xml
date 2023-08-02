@@ -91,6 +91,7 @@
             <e p="UIMainMenu.cs" t="Include" />
             <e p="UISettings.cs" t="Include" />
             <e p="UpdateLevel.cs" t="Include" />
+            <e p="VolumeInit.cs" t="Include" />
           </e>
         </e>
         <e p="TextMesh Pro" t="Include">
