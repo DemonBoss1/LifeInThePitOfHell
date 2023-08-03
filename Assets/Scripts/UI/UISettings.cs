@@ -42,12 +42,20 @@ namespace UI
             _resolutions = Screen.resolutions;
             resolutionDropdown.ClearOptions();
             List<string> options = new List<string>();
+            int indexCurrentResolution = 0;
             for (int i = 0; i < _resolutions.Length; i++)
             {
                 string option = _resolutions[i].width + " x " + _resolutions[i].height;
                 options.Add(option);
+
+                if (_resolutions[i].width == Screen.currentResolution.width &&
+                    _resolutions[i].height == Screen.currentResolution.height)
+                {
+                    indexCurrentResolution = i;
+                }
             }
             resolutionDropdown.AddOptions(options);
+            resolutionDropdown.value = indexCurrentResolution;
         }
 
         private void OnDisable()
