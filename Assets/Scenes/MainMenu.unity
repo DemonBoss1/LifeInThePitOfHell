@@ -5566,7 +5566,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 444030626}
         m_TargetAssemblyTypeName: UI.UISettings, Assembly-CSharp
-        m_MethodName: SetQuality
+        m_MethodName: SetResolution
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

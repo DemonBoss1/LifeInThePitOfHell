@@ -31,6 +31,11 @@ namespace UI
             QualitySettings.SetQualityLevel(qualityIndex);
         }
 
+        public void SetResolution(int resolutionIndex)
+        {
+            Resolution resolution = _resolutions[resolutionIndex];
+            Screen.SetResolution(resolution.height, resolution.width, Screen.fullScreen);
+        }
         private void Start()
         {
             _volume = PlayerPrefs.GetFloat("volume", 0);
