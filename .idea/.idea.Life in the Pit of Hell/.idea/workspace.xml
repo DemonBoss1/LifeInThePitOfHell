@@ -20,8 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c27d656-66fa-4961-aa8d-8b2259de6089" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Life in the Pit of Hell/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Life in the Pit of Hell/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Life in the Pit of Hell/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Life in the Pit of Hell/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Audio/VolumeInit.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Audio/VolumeInit.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/UISettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UISettings.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,6 +40,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Audio/Sound.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AttackController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/UIBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/SettingInit.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/System/PlatformController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Heal.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -91,6 +94,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Dead.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HitPoints.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Audio/AudioManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/SettingInit.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/UISettings.cs" />
       </list>
     </option>
@@ -166,7 +170,7 @@
       <workItem from="1689926234550" duration="10150000" />
       <workItem from="1690097544275" duration="897000" />
       <workItem from="1690879002782" duration="4904000" />
-      <workItem from="1690964206533" duration="6561000" />
+      <workItem from="1690964206533" duration="7238000" />
     </task>
     <servers />
   </component>
