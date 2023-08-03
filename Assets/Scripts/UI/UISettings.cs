@@ -18,6 +18,11 @@ namespace UI
             audioMixer.SetFloat("volume", volume);
         }
 
+        public void SetQuality(int qualityIndex)
+        {
+            QualitySettings.SetQualityLevel(qualityIndex);
+        }
+
         private void Start()
         {
             _volume = PlayerPrefs.GetFloat("volume", 0);

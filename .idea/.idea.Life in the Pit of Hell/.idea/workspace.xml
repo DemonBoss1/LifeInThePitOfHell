@@ -20,11 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c27d656-66fa-4961-aa8d-8b2259de6089" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Life in the Pit of Hell/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Life in the Pit of Hell/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Life in the Pit of Hell/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Life in the Pit of Hell/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/UISettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UISettings.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +84,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Compat.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CharacterCharacteristics.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIMainMenu.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UISettings.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/VolumeInit.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Audio/GetAudioClip.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AttackController.cs" />
@@ -94,6 +91,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Dead.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HitPoints.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Audio/AudioManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UISettings.cs" />
       </list>
     </option>
   </component>
@@ -168,7 +166,7 @@
       <workItem from="1689926234550" duration="10150000" />
       <workItem from="1690097544275" duration="897000" />
       <workItem from="1690879002782" duration="4904000" />
-      <workItem from="1690964206533" duration="5189000" />
+      <workItem from="1690964206533" duration="6561000" />
     </task>
     <servers />
   </component>
