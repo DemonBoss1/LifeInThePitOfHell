@@ -11,6 +11,7 @@ namespace UI
     {
         private float _volume;
         private int _qualityIndex;
+        private int _resolutionIndex;
         
         [SerializeField] private AudioMixer audioMixer;
         [SerializeField] private Slider slider;
@@ -33,6 +34,7 @@ namespace UI
 
         public void SetResolution(int resolutionIndex)
         {
+            _resolutionIndex = resolutionIndex;
             Resolution resolution = _resolutions[resolutionIndex];
             Screen.SetResolution(resolution.height, resolution.width, Screen.fullScreen);
         }
@@ -67,6 +69,7 @@ namespace UI
         {
             PlayerPrefs.SetFloat("volume", _volume);
             PlayerPrefs.SetInt("qualityIndex", _qualityIndex);
+            PlayerPrefs.SetInt("resolutionIndex", _resolutionIndex);
         }
     }
 }
