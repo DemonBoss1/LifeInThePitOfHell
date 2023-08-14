@@ -36,7 +36,7 @@ namespace UI
         {
             _resolutionIndex = resolutionIndex;
             Resolution resolution = _resolutions[resolutionIndex];
-            Screen.SetResolution(resolution.height, resolution.width, Screen.fullScreen);
+            Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
         }
         private void Start()
         {
